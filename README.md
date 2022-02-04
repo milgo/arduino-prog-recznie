@@ -103,13 +103,13 @@
   Edit</br>
   </td>
   <td width=95 valign=top >
-  Listing programu</br>
+  <b>Listing</b></br>
   </td>
   <td width=76 valign=top >
-  Tryb edycji</br>
+  <b>Edit mode></b></br>
   </td>
   <td width=85 valign=top >
-  Grupa poleceń</br>
+ <b>Instr. group</b></br>
   </td>
   <td width=161 valign=top >
   Rozkaz</br>
