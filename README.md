@@ -106,22 +106,22 @@
   <b>Listing</b></br>
   </td>
   <td width=76 valign=top >
-  <b>Edit mode></b></br>
+  <b>Edit mode</b></br>
   </td>
   <td width=85 valign=top >
- <b>Instr. group</b></br>
+  <b>Instr. group</b></br>
   </td>
   <td width=161 valign=top >
-  Rozkaz</br>
+  <b>Instruction</b></br>
   </td>
   <td width=170 valign=top >
-  Parametr</br>
+  <b>Parameter</b></br>
   </td>
   <td width=123 valign=top >
-  Wartość dla parametru</br>
+  <b>Paremeter value</b></br>
   </td>
   <td width=123 >
-  Wartość dla parametru</br>
+  <b>Paremeter value</b></br>
   </td>
  </tr>
  <tr>
