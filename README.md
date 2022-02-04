@@ -1,30 +1,30 @@
 # ArduinoProgramowaneRecznie
 <table border=1 cellspacing=0 cellpadding=0 width=0>
  <tr>
-  <td width=84 valign=top>
+  <th width=84 valign=top>
   Poziom 0</br>
-  </td>
-  <td width=95 valign=top >
+  </th>
+  <th width=95 valign=top >
   Poziom 1</br>
-  </td>
-  <td width=76 valign=top >
+  </th>
+  <th width=76 valign=top >
   Poziom 2</br>
-  </td>
-  <td width=85 valign=top >
+  </th>
+  <th width=85 valign=top >
   Poziom 3</br>
-  </td>
-  <td width=161 valign=top >
+  </th>
+  <th width=161 valign=top >
   Poziom 4</br>
-  </td>
-  <td width=170 valign=top >
+  </th>
+  <th width=170 valign=top >
   Poziom 5</br>
-  </td>
-  <td width=123 valign=top >
+  </th>
+  <th width=123 valign=top >
   Poziom 6</br>
-  </td>
-  <td width=123 valign=top >
+  </th>
+  <th width=123 valign=top >
   Poziom 7</br>
-  </td>
+  </th>
  </tr>
  <tr>
   <td width=84 rowspan=3 valign=top >
