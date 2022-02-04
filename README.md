@@ -22,7 +22,6 @@
             <td>-</td>
         </tr>
         <tr>
-            <td></td>
             <td>Discard</td>
             <td>Running...</td>
             <td>-</td>
@@ -31,7 +30,6 @@
             <td>-</td>
         </tr>
         <tr>
-            <td></td>
             <td>Cancel</td>
             <td>-</td>
             <td>-</td>
