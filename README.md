@@ -2,28 +2,28 @@
 <table border=1 cellspacing=0 cellpadding=0 width=0>
  <tr>
   <th width=84 valign=top>
-  Poziom 0</br>
+  Level 0</br>
   </th>
   <th width=95 valign=top >
-  Poziom 1</br>
+  Level 1</br>
   </th>
   <th width=76 valign=top >
-  Poziom 2</br>
+  Level 2</br>
   </th>
   <th width=85 valign=top >
-  Poziom 3</br>
+  Level 3</br>
   </th>
   <th width=161 valign=top >
-  Poziom 4</br>
+  Level 4</br>
   </th>
   <th width=170 valign=top >
-  Poziom 5</br>
+  Level 5</br>
   </th>
   <th width=123 valign=top >
-  Poziom 6</br>
+  Level 6</br>
   </th>
   <th width=123 valign=top >
-  Poziom 7</br>
+  Level 7</br>
   </th>
  </tr>
  <tr>
