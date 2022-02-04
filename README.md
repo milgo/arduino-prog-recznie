@@ -480,3 +480,841 @@
   </td>
  </tr>
 </table>
+
+## Instruction list
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=0
+ >
+ <tr>
+  <td width=141 >
+  <b>Rozkaz</b>
+  </td>
+  <td width=425 >
+  <b>Opis</b>
+  </td>
+  <td width=65 >
+  <b>Zależny od RLO</b>
+  </td>
+  <td width=84 >
+  <b>Modyfikuje RLO</b>
+  </td>
+  <td width=62 >
+  <b>Anuluje RLO</b>
+  </td>
+  <td width=76 >
+  <b>Odczytuje ACC</b>
+  </td>
+  <td width=84 >
+  <b>Modyfikuje ACC</b>
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>A  :And</b>
+  </td>
+  <td width=425 valign=top >
+  Iloczyn logiczny RLO i parametru. Wynik w RLO
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  TAK
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>O  :Or</b>
+  </td>
+  <td width=425 valign=top >
+  Suma logiczna RLO i parametru. Wynik w RLO
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  TAK
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>AN :Not And</b>
+  </td>
+  <td width=425 valign=top >
+  Negacja iloczynu logicznego RLO i parametru. Wynik w RLO
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  TAK
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>ON :Not Or</b>
+  </td>
+  <td width=425 valign=top >
+  Negacja sumy logicznej RLO i parametru. Wynik w RLO
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  TAK
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>=  :Assign</b>
+  </td>
+  <td width=425 valign=top >
+  Przepisanie RLO do parametru
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  TAK
+  </td>
+  <td width=76 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>S  :Set</b>
+  </td>
+  <td width=425 valign=top >
+  Ustawienie bitu parametru na 1, gdy RLO=1
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  TAK
+  </td>
+  <td width=76 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>R: Reset</b>
+  </td>
+  <td width=425 valign=top >
+  Reset bitu parametru na 0, gdy RLO=1
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  TAK
+  </td>
+  <td width=76 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>FP: Positive edge</b>
+  </td>
+  <td width=425 valign=top >
+  Ustawienie RLO na 1, gdy RLO zmienia się z 0 na 1
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  TAK
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>FN: Negative Edge</b>
+  </td>
+  <td width=425 valign=top >
+  Ustawienie RLO na 1, gdy RLO zmienia się z 1 na 0
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  TAK
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>L  :Load</b>
+  </td>
+  <td width=425 valign=top >
+  Ładuje wartość z parametru do ACC
+  </td>
+  <td width=65 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  TAK
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>T  :Transfer</b>
+  </td>
+  <td width=425 valign=top >
+  Przenosi wartość z ACC do parametru
+  </td>
+  <td width=65 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>SP :Pulse timer</b>
+  </td>
+  <td width=425 valign=top >
+  Wyzwolenie timera impuls, gdy RLO=1 po czasie wczytanym z ACC
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  TAK
+  </td>
+  <td width=76 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>SE :Ext. Pulse timer</b>
+  </td>
+  <td width=425 valign=top >
+  Wyzwolenie timera impuls z pamięcią, gdy RLO=1 po czasie wczytanym z
+  ACC
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  TAK
+  </td>
+  <td width=76 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>SD :On-Delay timer</b>
+  </td>
+  <td width=425 valign=top >
+  Wyzwolenie timera opóźnienie załączenia, gdy RLO=1 po czasie
+  wczytanym z ACC
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  TAK
+  </td>
+  <td width=76 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>SS: Ret. On-Delay timer</b>
+  </td>
+  <td width=425 valign=top >
+  Wyzwolenie timera opóźnienie załączenia z pamięcią, gdy RLO=1 po
+  czasie wczytanym z ACC
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  TAK
+  </td>
+  <td width=76 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>SF :Off-Delay timer</b>
+  </td>
+  <td width=425 valign=top >
+  Wyzwolenie timera opóźnienie wyłączenia, gdy RLO=1 po czasie
+  wczytanym z ACC
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  TAK
+  </td>
+  <td width=76 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>R  :Reset timer</b>
+  </td>
+  <td width=425 valign=top >
+  Reset timera
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  TAK
+  </td>
+  <td width=76 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>CU :Increment counter</b>
+  </td>
+  <td width=425 valign=top >
+  Inkrementacja licznika, gdy RLO=1
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  TAK
+  </td>
+  <td width=76 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>CD :Decrement counter</b>
+  </td>
+  <td width=425 valign=top >
+  Dekrementacja liczniak, gdy RLO=1
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  TAK
+  </td>
+  <td width=76 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>S  :Set counter</b>
+  </td>
+  <td width=425 valign=top >
+  Ustawia stan licznika na ACC, gdy RLO=1
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  TAK
+  </td>
+  <td width=76 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>R :Reset counter</b>
+  </td>
+  <td width=425 valign=top >
+  Zerowanie licznika, gdy RLO=1
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  TAK
+  </td>
+  <td width=76 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>L  :Load counter</b>
+  </td>
+  <td width=425 valign=top >
+  Załadowanie wartości licznika do ACC
+  </td>
+  <td width=65 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  TAK
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>+I : Add</b>
+  </td>
+  <td width=425 valign=top >
+  Wykonuje operację: ACC0 = ACC1+ACC0
+  </td>
+  <td width=65 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  TAK
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>-I :Substract</b>
+  </td>
+  <td width=425 valign=top >
+  Wykonuje operację: ACC0 = ACC1-ACC0
+  </td>
+  <td width=65 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  TAK
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>*I :Multiply</b>
+  </td>
+  <td width=425 valign=top >
+  Wykonuje operację: ACC0 = ACC1*ACC0
+  </td>
+  <td width=65 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  TAK
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>/I :Divide</b>
+  </td>
+  <td width=425 valign=top >
+  Wykonuje operację: ACC0 = ACC1/ACC0
+  </td>
+  <td width=65 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  TAK
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>==I :Equals</b>
+  </td>
+  <td width=425 valign=top >
+  RLO=1, gdy ACC1=ACC0
+  </td>
+  <td width=65 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  TAK
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>&lt;&gt;I :Different</b>
+  </td>
+  <td width=425 valign=top >
+  RLO=1, gdy ACC1&lt;&gt;ACC0
+  </td>
+  <td width=65 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  TAK
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>&gt;I :Greater</b>
+  </td>
+  <td width=425 valign=top >
+  RLO=1, gdy ACC1&gt;ACC0
+  </td>
+  <td width=65 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  TAK
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>&lt;I :Less</b>
+  </td>
+  <td width=425 valign=top >
+  RLO=1, gdy ACC1&lt;ACC0
+  </td>
+  <td width=65 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  TAK
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>&gt;= :Greater or equal</b>
+  </td>
+  <td width=425 valign=top >
+  RLO=1, gdy ACC1&gt;=ACC0
+  </td>
+  <td width=65 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  TAK
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>&lt;= :Less or Equal</b>
+  </td>
+  <td width=425 valign=top >
+  RLO=1, gdy ACC1&lt;=ACC0
+  </td>
+  <td width=65 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  TAK
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>JU :Jump uncond.</b>
+  </td>
+  <td width=425 valign=top >
+  Przenosi wykonanie programu do linii podanej jako parametr
+  </td>
+  <td width=65 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  NIE
+  </td>
+  <td width=76 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>JC: Jump cond.</b>
+  </td>
+  <td width=425 valign=top >
+  Przenosi wykonanie programu do linii podanej jako parametr, gdy RLO=1
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  TAK
+  </td>
+  <td width=76 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+ <tr>
+  <td width=141 valign=top >
+  <b>JCN: Jump cond. If not</b>
+  </td>
+  <td width=425 valign=top >
+  Przenosi wykonanie programu do linii podanej jako parametr, gdy RLO=0
+  </td>
+  <td width=65 valign=top >
+  TAK
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+  <td width=62 valign=top >
+  TAK
+  </td>
+  <td width=76 valign=top >
+  NIE
+  </td>
+  <td width=84 valign=top >
+  NIE
+  </td>
+ </tr>
+</table>
