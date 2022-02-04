@@ -1,5 +1,5 @@
 # ArduinoProgramowaneRecznie
-![ScreenShot](DSCN9235.JPG)
+![ScreenShot](DSCN9235.JPG?raw=true)
 
 ## Device menu tree
 <table border=1 cellspacing=0 cellpadding=0 width=0>
