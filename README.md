@@ -1,5 +1,6 @@
 # ArduinoProgramowaneRecznie
-![ScreenShot](DSCN9235.JPG?raw=true)
+
+![foto](https://raw.githubusercontent.com/milgo/ArduinoProgramowaneRecznie/main/DSCN9235.png)
 
 ## Device menu tree
 <table border=1 cellspacing=0 cellpadding=0 width=0>
