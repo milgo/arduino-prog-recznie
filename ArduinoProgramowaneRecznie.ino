@@ -2,6 +2,9 @@
 #include "stl.h"
 #include "gui.h"
 
+#include "TimeLib.h"
+#include "DS1307RTC.h"
+
 #define SCREEN_SAVER_TIME 60
 #define EXIT_RUNNING_TIME 6
 #define EXIT_RUNNNING_BUTTONS(BUTTONS) IS_PRESSED(BUTTONS, BUTTON_LEFT) && IS_PRESSED(BUTTONS, BUTTON_RIGHT)
@@ -39,6 +42,19 @@ void setup() {
   
   readProgramFromEeprom();
   programChanged = 1;
+
+  //testing RTC
+  /*tmElements_t tm;
+  tm.Hour = 13;
+  tm.Minute = 47;
+  tm.Second = 29;
+  tm.Day = 26;
+  tm.Month = 03;
+  tm.Year = 23;
+  if (RTC.write(tm)) {
+      //config = true;
+  }*/
+  //-----------
 }
 
 const char _0dot[] PROGMEM = {""};
@@ -309,11 +325,15 @@ void runProgram(){
 int newMenuPosition = -2;
 
 void loop() {
-
+  tmElements_t tm;
   displayClear();
   displaySetTextNormal();
   displaySetCursor(0, 0);
-  printA(message, NOPROGRAM_MSG);
+  //printA(message, NOPROGRAM_MSG);
+  //displayPrint("Hello");
+  if (RTC.read(tm)) {
+    displayPrint(tm.Minute);
+  }
   displayDisplay();
   /*switch(newMenuPosition){
     case -1: break;
