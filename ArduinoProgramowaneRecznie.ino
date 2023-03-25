@@ -309,8 +309,13 @@ void runProgram(){
 int newMenuPosition = -2;
 
 void loop() {
-  
-  switch(newMenuPosition){
+
+  displayClear();
+  displaySetTextNormal();
+  displaySetCursor(0, 0);
+  printA(message, NOPROGRAM_MSG);
+  displayDisplay();
+  /*switch(newMenuPosition){
     case -1: break;
     case 0:{ 
           int8_t res = showMenu(runMenu, NULL, 0, 3);
@@ -328,6 +333,6 @@ void loop() {
     default: runProgram(); break;
   }
   
-  newMenuPosition = showMenu(mainMenu, NULL, 0, MAIN_MENU_SIZE);
+  newMenuPosition = showMenu(mainMenu, NULL, 0, MAIN_MENU_SIZE);*/
      
 }
