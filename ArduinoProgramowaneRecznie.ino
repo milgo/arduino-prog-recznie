@@ -2,8 +2,9 @@
 #include "stl.h"
 #include "gui.h"
 
-#include "TimeLib.h"
-#include "DS1307RTC.h"
+#include "Adafruit_FRAM_I2C.h"
+
+Adafruit_EEPROM_I2C i2ceeprom;
 
 #define SCREEN_SAVER_TIME 60
 #define EXIT_RUNNING_TIME 6
@@ -43,18 +44,19 @@ void setup() {
   readProgramFromEeprom();
   programChanged = 1;
 
-  //testing RTC
-  /*tmElements_t tm;
-  tm.Hour = 13;
-  tm.Minute = 47;
-  tm.Second = 29;
-  tm.Day = 26;
-  tm.Month = 03;
-  tm.Year = 23;
-  if (RTC.write(tm)) {
-      //config = true;
-  }*/
-  //-----------
+
+  displayClear();
+  displaySetTextNormal();
+  displaySetCursor(0, 0);
+  if (i2ceeprom.begin(0x50)) {  // you can stick the new i2c addr in here, e.g. begin(0x51);
+    displayPrint("Found I2C FRAM");
+    displayDisplay();
+    i2ceeprom.write(0x0, 0xaa);
+  } else {
+    displayPrint("FRAM not identified");
+    displayDisplay();
+    //while (1);
+  }
 }
 
 const char _0dot[] PROGMEM = {""};
@@ -325,15 +327,14 @@ void runProgram(){
 int newMenuPosition = -2;
 
 void loop() {
-  tmElements_t tm;
+  
   displayClear();
   displaySetTextNormal();
   displaySetCursor(0, 0);
   //printA(message, NOPROGRAM_MSG);
   //displayPrint("Hello");
-  if (RTC.read(tm)) {
-    displayPrint(tm.Minute);
-  }
+  uint8_t test = i2ceeprom.read(0x0);
+  displayPrint(test);
   displayDisplay();
   /*switch(newMenuPosition){
     case -1: break;
