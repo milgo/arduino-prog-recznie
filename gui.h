@@ -18,10 +18,10 @@
 #define COMM_MENU_SIZE 7
 #define MAX_STRING_SIZE 10
 
-#define BUTTON_DOWN 2
-#define BUTTON_LEFT 1
-#define BUTTON_RIGHT 5
-#define BUTTON_UP 0
+#define BUTTON_DOWN 5
+#define BUTTON_LEFT 0
+#define BUTTON_RIGHT 1
+#define BUTTON_UP 6
 #define BUTTON_ENTER 7
 #define IS_PRESSED(BUTTONS, BUTTON) (((BUTTONS) & (1<<(BUTTON))) == (1<<(BUTTON)))
 

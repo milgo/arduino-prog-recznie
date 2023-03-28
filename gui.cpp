@@ -9,7 +9,7 @@
 #include <avr/pgmspace.h>
 
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
-PCF8574 pcf20(0x38);
+PCF8574 pcf20(0x20);
 
 int menuPosition = 0;
 int selectedPosition = 0;
