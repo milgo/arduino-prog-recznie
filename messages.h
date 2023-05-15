@@ -53,7 +53,7 @@ const char clearMsgStr[] PROGMEM = "Erasing local program...";
 const char readingEepromMsgStr[] PROGMEM = "Reading from eeprom...";
 const char reserved0MsgStr[] PROGMEM = "";
 const char noChangesMsgStr[] PROGMEM = "No changes!";
-const char colon[] PROGMEM = ": ";
+const char colon[] PROGMEM = ":";
 
 const char enterInputNrMsgStr[] PROGMEM = "Enter input nr:";
 const char enterOutputNrMsgStr[] PROGMEM = "Enter output nr:";
