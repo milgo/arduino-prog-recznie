@@ -79,7 +79,7 @@ int showMenu(const char * const *menu, const char *const *descMenu, int from, in
 int32_t enterValue(int msg, long int curVal, bool isSigned, int len, int maxDigit){
   unsigned char newButtons = 0;
   int32_t retVal = 0;
-  byte v[10];
+  unsigned char v[10];
 
   //get sign
   v[0]=0;
@@ -174,12 +174,14 @@ void insertProgramLine(int number, bool edit){
         mem = showMenu(memStr, memDesc, memPtrFrom, memPtrTo);
         if(mem >= 0){
 
+          /*casting int16_t to char ???*/
           char sig = pgm_read_word(&memValidationRules[mem*5]);
           char len = pgm_read_word(&memValidationRules[mem*5+1]);
           char dig = pgm_read_word(&memValidationRules[mem*5+2]);
           int16_t minimum = pgm_read_word(&memValidationRules[mem*5+3]);
           int16_t maximum = pgm_read_word(&memValidationRules[mem*5+4]);
 
+          /*pgm_read_word when value is char ???*/
           uint8_t enterMsg = pgm_read_word(&memValueAquireMsg[mem]);
           value = enterValue(enterMsg, 0, sig, len, dig);
           
