@@ -17,6 +17,7 @@
 #define MAIN_MENU_SIZE 4
 #define COMM_MENU_SIZE 7
 #define MAX_STRING_SIZE 10
+#define FONT_HEIGHT 8
 
 #define BUTTON_DOWN 5
 #define BUTTON_LEFT 0

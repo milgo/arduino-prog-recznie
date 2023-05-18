@@ -6,6 +6,16 @@
  * 3. Add level paremater to showMenu to draw child menu to the right 
  */
 
+#define MENU_ROWS_VISIBLE 25
+#define MENU_ROWS_LENGTH 25
+
+#define BUTTON_DOWN 80
+#define BUTTON_LEFT 75
+#define BUTTON_RIGHT 77
+#define BUTTON_UP 72
+#define BUTTON_ENTER 13
+#define IS_PRESSED(BUTTONS, BUTTON) (BUTTONS==BUTTON)
+
 int menuPosition = 0;
 int selectedPosition = 0;
 char editorBufStr[16];
@@ -25,45 +35,75 @@ void exitCurrentMenu(int currentMenuPos){
   selectedPosition = menuPosition + modulo;
 }
 
-int showMenu(const char * const *menu, const char *const *descMenu, int from, int to){
-  int pos = 0, start = 0; int len = to - from;
-  unsigned char newButtons = 0;
-  while(true){
-    displayClear();
-    displaySetCursor(0, 0);
+void fillStr(char *dest, char c, int len){
+	//int fill = MENU_ROWS_LENGTH - rowlen;
+	if(len>0){
+		memset(dest, ' ', len);
+		*(editorBufStr + len - 1) = '\0';
+	}else{
+		*(editorBufStr) = '\0';
+	}
+}
 
-    if(IS_PRESSED(newButtons, BUTTON_LEFT)) return -1;
-    if(IS_PRESSED(newButtons, BUTTON_ENTER)) return from+pos;
+/*memset(editorBufStr, ' ', MENU_ROWS_LENGTH - rowlen);
+		*(editorBufStr + MENU_ROWS_LENGTH - rowlen - 1) = '\0';
+		displayPrint(editorBufStr);*/
+
+int showMenu(int x, int y, const char * const *menu, const char *const *descMenu, int from, int to, uint8_t *selPos){
+  int pos = 0, start = 0; 
+  int len = to - from;
+  int rowlen = 0;
+  unsigned char newButtons = 0;
+  //displayClear();
+  while(true){
+    //displayClear();
+    displaySetCursor(x*MENU_ROWS_LENGTH, y);
+
+    if(IS_PRESSED(newButtons, BUTTON_LEFT)) 
+	{
+		displayClear();
+        return -1;
+	}
+    if(IS_PRESSED(newButtons, BUTTON_ENTER)) {
+    	//displayClear();
+    	if(selPos!=NULL)
+    	    (*selPos) = (*selPos)+pos;
+        return from+pos;	
+	}
     if(pos>0 && IS_PRESSED(newButtons, BUTTON_UP)) pos--;
     if(pos<len-1 && IS_PRESSED(newButtons, BUTTON_DOWN)) pos++;
 
     if(pos<start && start>0)start--;
-    else if(pos>start+3 && start<len-4)start++;
+    else if(pos>start+MENU_ROWS_VISIBLE-1 && start<len-MENU_ROWS_VISIBLE)start++;
 
-    for(int i=start; i<start+4; i++){
+    for(int i=start; i<start+MENU_ROWS_VISIBLE; i++){
 
-      if(from+i>=to)break;
+		if(from+i>=to)break;
       
-      if(pos == i){
-        displaySetTextInvert();
-      }
+      	if(pos == i){
+        	displaySetTextInvert();
+      	}
   
-      displaySetCursor(0, (i-start)*8);
-
-      strcpy_P(editorBufStr, (char*)pgm_read_word(&(menu[from+i])));
-      displayPrint(editorBufStr);
-      
-
-      if(descMenu){
-        printA(message, COLON); //display.print(F(":"));
-        strcpy_P(editorBufStr, (char*)pgm_read_word(&(descMenu[from+i])));
-        displayPrintln(editorBufStr);
-      }else{
-        displayPrintln();
-      }
-        
-      if(pos == i){
-        displaySetTextNormal();
+	    displaySetCursor(x*MENU_ROWS_LENGTH, y+(i-start));
+	
+	    strcpy_P(editorBufStr, (char*)pgm_read_word(&(menu[from+i])));
+	    displayPrint(editorBufStr);
+	    rowlen = strlen(editorBufStr);
+	
+	    if(descMenu){
+	    	printA(message, COLON); //display.print(F(":"));
+	    	strcpy_P(editorBufStr, (char*)pgm_read_word(&(descMenu[from+i])));
+	        displayPrint(editorBufStr);
+	        rowlen += strlen(editorBufStr);
+	    }/*else{
+	        displayPrint();
+	    }*/
+	
+		fillStr(editorBufStr, ' ', MENU_ROWS_LENGTH - rowlen);
+	    displayPrint(editorBufStr);
+		    
+	    if(pos == i){
+	    displaySetTextNormal();
       }
     }
 
@@ -76,7 +116,7 @@ int showMenu(const char * const *menu, const char *const *descMenu, int from, in
   }
 }
 
-int32_t enterValue(int msg, long int curVal, bool isSigned, int len, int maxDigit){
+int32_t enterValue(int x, int y, int msg, long int curVal, bool isSigned, int len, int maxDigit){
   unsigned char newButtons = 0;
   int32_t retVal = 0;
   unsigned char v[10];
@@ -99,8 +139,8 @@ int32_t enterValue(int msg, long int curVal, bool isSigned, int len, int maxDigi
   int pos = len;
   int maxVal = 1;
   while(true){
-    displayClear();
-    displaySetCursor(0, 0);
+    //displayClear();
+    displaySetCursor(x*MENU_ROWS_LENGTH, y);
 
     strcpy_P(editorBufStr, (char*)pgm_read_word(&(message[msg])));
     displayPrint(editorBufStr);
@@ -121,12 +161,12 @@ int32_t enterValue(int msg, long int curVal, bool isSigned, int len, int maxDigi
     for(int i=0; i<len+1; i++){
       
       if(pos==i){
-        displaySetCursor(i*6, 16);
+        displaySetCursor(x*MENU_ROWS_LENGTH+i, y+2);
         displayPrint("^ ");
         //display.print("]");
       }
 
-      displaySetCursor(i*6, 8);
+      displaySetCursor(x*MENU_ROWS_LENGTH+i, y+1);
       if(i==0){
         if(v[0]==0)displayPrint("+");
         else displayPrint("-");
@@ -141,8 +181,8 @@ int32_t enterValue(int msg, long int curVal, bool isSigned, int len, int maxDigi
     delay(100);
   }
 
-  displayClear();
-  displaySetCursor(0, 0);
+  //displayClear();
+  //displaySetCursor(level*MENU_ROWS_LENGTH, 0);
 
   //convert from array
   for(int j=1;j<len+1;j++){
@@ -158,11 +198,11 @@ int32_t enterValue(int msg, long int curVal, bool isSigned, int len, int maxDigi
 
 void insertProgramLine(int number, bool edit){
   int32_t command = 0, mem = -1;
-  uint8_t var_pos = 0, bit_pos = 0;
-  int8_t comGroup = showMenu(commandGroupMenu, NULL, 0, COMM_MENU_SIZE);
+  uint8_t var_pos = 0, bit_pos = 0, selPos = number;
+  int8_t comGroup = showMenu(1, selPos, commandGroupMenu, NULL, 0, COMM_MENU_SIZE, &selPos);
   int32_t value = 0;
   if(comGroup>=0){
-    command = showMenu(comStr, comDesc, comGroups[comGroup*2], comGroups[comGroup*2+1]);
+    command = showMenu(2, selPos, comStr, comDesc, comGroups[comGroup*2], comGroups[comGroup*2+1], &selPos);
 
     uint8_t memPtrFrom, memPtrTo;
     memPtrFrom = pgm_read_byte(&(memGroups[command*2]));
@@ -171,7 +211,7 @@ void insertProgramLine(int number, bool edit){
     if(command>=0 && memPtrFrom>=0){
 
       if(memPtrFrom>0){ //if operation with mem selection
-        mem = showMenu(memStr, memDesc, memPtrFrom, memPtrTo);
+        mem = showMenu(3, selPos, memStr, memDesc, memPtrFrom, memPtrTo, &selPos);
         if(mem >= 0){
           
           /*casting int16_t to char ???*/
@@ -182,7 +222,7 @@ void insertProgramLine(int number, bool edit){
           int16_t maximum = pgm_read_word(&memValidationRules[mem*5+4]);
 
           uint8_t enterMsg = pgm_read_word(&memValueAquireMsg[mem]);
-          value = enterValue(enterMsg, 0, sig, len, dig);
+          value = enterValue(4, selPos, enterMsg, 0, sig, len, dig);
           
           if(value < minimum || value > maximum){
             printMessageAndWaitForButton(MUST_BE_IN_RANGE, minimum, maximum);
@@ -194,7 +234,7 @@ void insertProgramLine(int number, bool edit){
 
           uint8_t enterBit = pgm_read_word(&memBitAquireEnabled[mem]);
           if(enterBit == 1){
-            bit_pos = enterValue(ENTER_BIT_POS_MSG, 0, 0, 1, 7);
+            bit_pos = enterValue(5, selPos, ENTER_BIT_POS_MSG, 0, 0, 1, 7);
           }
   
         }
@@ -225,6 +265,8 @@ void insertProgramLine(int number, bool edit){
           }
         }
       }
+      
+      displayClear();
     }
   } 
 }
@@ -245,10 +287,10 @@ void editProgram(){
   displaySetTextNormal();
   
   while(true){
-    displayClear();
+    //displayClear();
 
     if(IS_PRESSED(newButtons, BUTTON_ENTER) && pos < PS) {
-      int res = showMenu(editMenu, NULL, 0, 3);
+      int res = showMenu(0, 0, editMenu, NULL, 0, 3, NULL);
       switch(res){
         case 0: insertProgramLine(pos, false);break;
         case 1: insertProgramLine(pos, true);break;
@@ -264,10 +306,10 @@ void editProgram(){
     if(pos<PS && IS_PRESSED(newButtons, BUTTON_DOWN))pos++;
 
     if(pos<pl && pl>0)pl--;
-    else if(pos>pl+3 && pl<PS-3)pl++;
+    else if(pos>pl+MENU_ROWS_VISIBLE-1 && pl<PS-MENU_ROWS_VISIBLE-1)pl++;
 
-    for(int i=pl; i<pl+4 && i<=PS; i++){
-      displaySetCursor(0, (i-pl)*8);
+    for(int i=pl; i<pl+MENU_ROWS_VISIBLE && i<=PS; i++){
+      displaySetCursor(0, (i-pl));
       uint8_t func_id = program[i] >> FUNC_BIT_POS;
       uint16_t param = program[i] & FUNC_PARAM_MASK;
       uint8_t mem_pos = (program[i] >> MEM_BIT_POS) & 0xFF;
@@ -297,6 +339,11 @@ void editProgram(){
             displayPrint((long)bit_pos);
           }
         }
+        
+        /*TODO*/
+        //fillStr(editorBufStr, ' ', MENU_ROWS_LENGTH - rowlen);
+	    //displayPrint(editorBufStr);
+	    
       }else {
         if(PS<MAX_PROGRAM_SIZE){
           printA(message, ADD_LINE_MSG);

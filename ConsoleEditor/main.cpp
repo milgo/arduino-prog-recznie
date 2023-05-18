@@ -9,6 +9,8 @@
 #define WHITE_ON_BLACK 15
 #define BLACK_ON_WHITE 240
 
+
+
 /*#define BUTTON_DOWN 80
 #define BUTTON_LEFT 75
 #define BUTTON_RIGHT 77
@@ -55,11 +57,11 @@ int main()
 {
 	PS=0;
 	PC=0;
-	printf("hello");
+	//printf("hello");
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 
 	SetConsoleTextAttribute(hConsole, WHITE_ON_BLACK);
-	printf("hello");
+	//printf("hello");
 	editProgram();
 
 	return 0;

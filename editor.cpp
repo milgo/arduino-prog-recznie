@@ -38,7 +38,7 @@ int showMenu(const char * const *menu, const char *const *descMenu, int from, in
     if(pos<len-1 && IS_PRESSED(newButtons, BUTTON_DOWN)) pos++;
 
     if(pos<start && start>0)start--;
-    else if(pos>start+3 && start<len-4)start++;
+    else if(pos>start+3 && start<len-4)start++;/*USE MENU_ROWS_VISIBLE*/
 
     for(int i=start; i<start+4; i++){
 
@@ -48,7 +48,7 @@ int showMenu(const char * const *menu, const char *const *descMenu, int from, in
         displaySetTextInvert();
       }
   
-      displaySetCursor(0, (i-start)*8);
+      displaySetCursor(0, (i-start)*FONT_HEIGHT);
 
       strcpy_P(editorBufStr, (char*)pgm_read_word(&(menu[from+i])));
       displayPrint(editorBufStr);
@@ -57,9 +57,9 @@ int showMenu(const char * const *menu, const char *const *descMenu, int from, in
       if(descMenu){
         printA(message, COLON); //display.print(F(":"));
         strcpy_P(editorBufStr, (char*)pgm_read_word(&(descMenu[from+i])));
-        displayPrintln(editorBufStr);
+        displayPrintln(editorBufStr);/*Println? why try Print*/
       }else{
-        displayPrintln();
+        displayPrintln();/*is this needed?*/
       }
         
       if(pos == i){
@@ -121,12 +121,12 @@ int32_t enterValue(int msg, long int curVal, bool isSigned, int len, int maxDigi
     for(int i=0; i<len+1; i++){
       
       if(pos==i){
-        displaySetCursor(i*6, 16);
+        displaySetCursor(i*6, FONT_HEIGHT*2);
         displayPrint("^ ");
         //display.print("]");
       }
 
-      displaySetCursor(i*6, 8);
+      displaySetCursor(i*6, FONT_HEIGHT);
       if(i==0){
         if(v[0]==0)displayPrint("+");
         else displayPrint("-");
@@ -142,7 +142,7 @@ int32_t enterValue(int msg, long int curVal, bool isSigned, int len, int maxDigi
   }
 
   displayClear();
-  displaySetCursor(0, 0);
+  displaySetCursor(0, 0);//is this needed?
 
   //convert from array
   for(int j=1;j<len+1;j++){
@@ -268,7 +268,7 @@ void editProgram(){
     else if(pos>pl+3 && pl<PS-3)pl++;
 
     for(int i=pl; i<pl+4 && i<=PS; i++){
-      displaySetCursor(0, (i-pl)*8);
+      displaySetCursor(0, (i-pl)*FONT_HEIGHT);
       uint8_t func_id = program[i] >> FUNC_BIT_POS;
       uint16_t param = program[i] & FUNC_PARAM_MASK;
       uint8_t mem_pos = (program[i] >> MEM_BIT_POS) & 0xFF;

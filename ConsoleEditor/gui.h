@@ -18,12 +18,12 @@
 #define COMM_MENU_SIZE 7
 #define MAX_STRING_SIZE 10
 
-#define BUTTON_DOWN 5
-#define BUTTON_LEFT 0
-#define BUTTON_RIGHT 1
-#define BUTTON_UP 6
-#define BUTTON_ENTER 7
-#define IS_PRESSED(BUTTONS, BUTTON) (((BUTTONS) & (1<<(BUTTON))) == (1<<(BUTTON)))
+#define BUTTON_DOWN 80
+#define BUTTON_LEFT 75
+#define BUTTON_RIGHT 77
+#define BUTTON_UP 72
+#define BUTTON_ENTER 13
+#define IS_PRESSED(BUTTONS, BUTTON) (BUTTONS==BUTTON)
 
 void setupGUI();
 void printA(const char *const* arr, int id);
