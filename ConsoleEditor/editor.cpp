@@ -6,34 +6,25 @@
  * 3. Add level paremater to showMenu to draw child menu to the right 
  */
 
-#define MENU_ROWS_VISIBLE 25
-#define MENU_ROWS_LENGTH 25
+#define MENU_ROWS_VISIBLE 23
+#define MENU_ROWS_LENGTH 20
 
 #define BUTTON_DOWN 80
 #define BUTTON_LEFT 75
 #define BUTTON_RIGHT 77
 #define BUTTON_UP 72
 #define BUTTON_ENTER 13
+#define EXTENDED 0
+#define F1 59
+#define F2 60
+#define F3 61
+#define F4 62
+#define F5 63
 #define IS_PRESSED(BUTTONS, BUTTON) (BUTTONS==BUTTON)
 
 int menuPosition = 0;
 int selectedPosition = 0;
-char editorBufStr[16];
-
-void enterCurrentOption(int newMenuPosition){
-  menuPosition = (newMenuPosition + 1) * 4;
-  selectedPosition = menuPosition;
-  //Serial.println(menuPosition);
-}
-
-void exitCurrentMenu(int currentMenuPos){
-  menuPosition = (currentMenuPos) / 4 - 1;// / 4 - modulo;
-  int modulo = menuPosition % 4;
-  menuPosition -= modulo;
-  if(menuPosition<0)menuPosition=0;
-  if(modulo<0)modulo=0;
-  selectedPosition = menuPosition + modulo;
-}
+char editorBufStr[20];
 
 void fillStr(char *dest, char c, int len){
 	//int fill = MENU_ROWS_LENGTH - rowlen;
@@ -45,16 +36,30 @@ void fillStr(char *dest, char c, int len){
 	}
 }
 
+void editorNewFile(){}
+void editorOpenFile(){}
+void editorSaveFile(){}
+void editorUploadFile(){}
+void editorDownloadFile(){}
+
 /*memset(editorBufStr, ' ', MENU_ROWS_LENGTH - rowlen);
 		*(editorBufStr + MENU_ROWS_LENGTH - rowlen - 1) = '\0';
 		displayPrint(editorBufStr);*/
 
-int showMenu(int x, int y, const char * const *menu, const char *const *descMenu, int from, int to, uint8_t *selPos){
+int showMenu(int x, int y, 
+		const char * const *menu, 
+		const char *const *descMenu, 
+		int from, int to, 
+		uint8_t *selPosX,
+		uint8_t *selPosY){
   int pos = 0, start = 0; 
   int len = to - from;
-  int rowlen = 0;
+  int rowlen = 0, mrowlen = 0;
   unsigned char newButtons = 0;
+  char *buf = editorBufStr;
   //displayClear();
+  
+  //max row size
   while(true){
     //displayClear();
     displaySetCursor(x*MENU_ROWS_LENGTH, y);
@@ -66,8 +71,8 @@ int showMenu(int x, int y, const char * const *menu, const char *const *descMenu
 	}
     if(IS_PRESSED(newButtons, BUTTON_ENTER)) {
     	//displayClear();
-    	if(selPos!=NULL)
-    	    (*selPos) = (*selPos)+pos;
+    	(*selPosX) = x + mrowlen;
+    	(*selPosY) = (*selPosY)+pos;
         return from+pos;	
 	}
     if(pos>0 && IS_PRESSED(newButtons, BUTTON_UP)) pos--;
@@ -84,24 +89,31 @@ int showMenu(int x, int y, const char * const *menu, const char *const *descMenu
         	displaySetTextInvert();
       	}
   
-	    displaySetCursor(x*MENU_ROWS_LENGTH, y+(i-start));
+	    displaySetCursor(x/**MENU_ROWS_LENGTH*/, y+(i-start));
 	
-	    strcpy_P(editorBufStr, (char*)pgm_read_word(&(menu[from+i])));
-	    displayPrint(editorBufStr);
-	    rowlen = strlen(editorBufStr);
-	
-	    if(descMenu){
-	    	printA(message, COLON); //display.print(F(":"));
-	    	strcpy_P(editorBufStr, (char*)pgm_read_word(&(descMenu[from+i])));
-	        displayPrint(editorBufStr);
-	        rowlen += strlen(editorBufStr);
+		char *buf = editorBufStr;
+	    strcpy_P(buf, (char*)pgm_read_word(&(menu[from+i])));
+	    //displayPrint(editorBufStr);
+	    //rowlen = strlen(buf);
+		buf += strlen(buf);
+		
+	    if(descMenu != NULL){
+	    	//printA(message, COLON); //display.print(F(":"));
+	    	strcpy_P(buf, ":"); buf++;
+	    	strcpy_P(buf, (char*)pgm_read_word(&(descMenu[from+i])));
+	        //displayPrint(editorBufStr);
+	        //rowlen += strlen(editorBufStr);
+
 	    }/*else{
 	        displayPrint();
 	    }*/
 	
-		fillStr(editorBufStr, ' ', MENU_ROWS_LENGTH - rowlen);
+		//fillStr(editorBufStr, ' ', MENU_ROWS_LENGTH - rowlen);
 	    displayPrint(editorBufStr);
-		    
+		rowlen = strlen(editorBufStr)+2;
+		if(mrowlen < rowlen)
+			mrowlen = rowlen;
+		
 	    if(pos == i){
 	    displaySetTextNormal();
       }
@@ -140,7 +152,7 @@ int32_t enterValue(int x, int y, int msg, long int curVal, bool isSigned, int le
   int maxVal = 1;
   while(true){
     //displayClear();
-    displaySetCursor(x*MENU_ROWS_LENGTH, y);
+    displaySetCursor(x/**MENU_ROWS_LENGTH*/, y);
 
     strcpy_P(editorBufStr, (char*)pgm_read_word(&(message[msg])));
     displayPrint(editorBufStr);
@@ -161,12 +173,12 @@ int32_t enterValue(int x, int y, int msg, long int curVal, bool isSigned, int le
     for(int i=0; i<len+1; i++){
       
       if(pos==i){
-        displaySetCursor(x*MENU_ROWS_LENGTH+i, y+2);
+        displaySetCursor(x/**MENU_ROWS_LENGTH*/+i, y+2);
         displayPrint("^ ");
         //display.print("]");
       }
 
-      displaySetCursor(x*MENU_ROWS_LENGTH+i, y+1);
+      displaySetCursor(x/**MENU_ROWS_LENGTH*/+i, y+1);
       if(i==0){
         if(v[0]==0)displayPrint("+");
         else displayPrint("-");
@@ -198,11 +210,11 @@ int32_t enterValue(int x, int y, int msg, long int curVal, bool isSigned, int le
 
 void insertProgramLine(int number, bool edit){
   int32_t command = 0, mem = -1;
-  uint8_t var_pos = 0, bit_pos = 0, selPos = number;
-  int8_t comGroup = showMenu(1, selPos, commandGroupMenu, NULL, 0, COMM_MENU_SIZE, &selPos);
+  uint8_t var_pos = 0, bit_pos = 0, selPosX = 0, selPosY = number;
+  int8_t comGroup = showMenu(selPosX, selPosY, commandGroupMenu, NULL, 0, COMM_MENU_SIZE, &selPosX, &selPosY);
   int32_t value = 0;
   if(comGroup>=0){
-    command = showMenu(2, selPos, comStr, comDesc, comGroups[comGroup*2], comGroups[comGroup*2+1], &selPos);
+    command = showMenu(selPosX, selPosY, comStr, comDesc, comGroups[comGroup*2], comGroups[comGroup*2+1], &selPosX, &selPosY);
 
     uint8_t memPtrFrom, memPtrTo;
     memPtrFrom = pgm_read_byte(&(memGroups[command*2]));
@@ -211,7 +223,7 @@ void insertProgramLine(int number, bool edit){
     if(command>=0 && memPtrFrom>=0){
 
       if(memPtrFrom>0){ //if operation with mem selection
-        mem = showMenu(3, selPos, memStr, memDesc, memPtrFrom, memPtrTo, &selPos);
+        mem = showMenu(selPosX, selPosY, memStr, memDesc, memPtrFrom, memPtrTo, &selPosX, &selPosY);
         if(mem >= 0){
           
           /*casting int16_t to char ???*/
@@ -222,7 +234,7 @@ void insertProgramLine(int number, bool edit){
           int16_t maximum = pgm_read_word(&memValidationRules[mem*5+4]);
 
           uint8_t enterMsg = pgm_read_word(&memValueAquireMsg[mem]);
-          value = enterValue(4, selPos, enterMsg, 0, sig, len, dig);
+          value = enterValue(selPosX, selPosY, enterMsg, 0, sig, len, dig);
           
           if(value < minimum || value > maximum){
             printMessageAndWaitForButton(MUST_BE_IN_RANGE, minimum, maximum);
@@ -234,7 +246,7 @@ void insertProgramLine(int number, bool edit){
 
           uint8_t enterBit = pgm_read_word(&memBitAquireEnabled[mem]);
           if(enterBit == 1){
-            bit_pos = enterValue(5, selPos, ENTER_BIT_POS_MSG, 0, 0, 1, 7);
+            bit_pos = enterValue(selPosX, selPosY, ENTER_BIT_POS_MSG, 0, 0, 1, 7);
           }
   
         }
@@ -283,27 +295,41 @@ void editProgram(){
   int pl = 0; int j=0;
   int pos = 0; 
   
-  unsigned char newButtons = 0;
+  unsigned char newButtons = -1;
   displaySetTextNormal();
-  
+
   while(true){
-    //displayClear();
 
     if(IS_PRESSED(newButtons, BUTTON_ENTER) && pos < PS) {
-      int res = showMenu(0, 0, editMenu, NULL, 0, 3, NULL);
+      int res = showMenu(1, 0, editMenu, NULL, 0, 3, NULL, NULL);
       switch(res){
         case 0: insertProgramLine(pos, false);break;
         case 1: insertProgramLine(pos, true);break;
-        case 2: removeProgramLine(pos);if(pos>0)pos--;if(pl>0)pl--;break;
+        case 2: removeProgramLine(pos);if(pos>0)pos--;if(pl>0)pl--;displayClear();break;
         default: break;
       }
     }else if(IS_PRESSED(newButtons, BUTTON_ENTER) && pos == PS && PS<MAX_PROGRAM_SIZE) {
       insertProgramLine(pos, false);
     }
     
-    if(IS_PRESSED(newButtons, BUTTON_LEFT)) return;
+    //display additional menu on bottom of the screen
+  	displaySetCursor(0, 29);
+	displayPrint("F1 New F2 Open F3 Save F4 Upload F5 Download");
+    
     if(pos>0 && IS_PRESSED(newButtons, BUTTON_UP)) pos--;
     if(pos<PS && IS_PRESSED(newButtons, BUTTON_DOWN))pos++;
+    
+    if(IS_PRESSED(newButtons, BUTTON_LEFT)) return;
+    
+    if(IS_PRESSED(newButtons, EXTENDED)){
+    	switch(getButtonsBlocking()){
+    		case F1:editorNewFile();break;
+    		case F2:editorOpenFile();break;
+    		case F3:editorSaveFile();break;
+    		case F4:editorUploadFile();break;
+    		case F5:editorDownloadFile();break;
+		}
+    }
 
     if(pos<pl && pl>0)pl--;
     else if(pos>pl+MENU_ROWS_VISIBLE-1 && pl<PS-MENU_ROWS_VISIBLE-1)pl++;
@@ -321,7 +347,7 @@ void editProgram(){
           displaySetTextInvert();
         }
 
-      if(i<PS){
+      if(i<PS){//display line of code
         displayPrint(i+1);displayPrint(": ");
         printA(comStr, func_id);
         displayPrint(" ");
