@@ -7,6 +7,7 @@
 #define pgm_read_byte(x) (*x)
 #define pgm_read_word(x) (*x)
 #define WHITE_ON_BLACK 15
+#define BLACK_ON_GRAY 112
 #define BLACK_ON_WHITE 240
 
 extern HANDLE hConsole;

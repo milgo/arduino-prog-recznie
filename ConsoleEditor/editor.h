@@ -16,7 +16,7 @@
 int showMenu(int x, int y, const char * const *menu, const char *const *descMenu, int from, int to, uint8_t *selPos);
 int32_t enterValue(int x, int y, int msg, long int curVal, bool isSigned, int len, int maxDigit);
 
-void insertProgramLine(int number, int row, bool edit);
+void insertProgramLine(int lpos, int number, int row, bool edit);
 void removeProgramLine(int number);
 void editProgram();
 

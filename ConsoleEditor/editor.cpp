@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "editor.h"
 
 /**
@@ -6,7 +7,7 @@
  * 3. Add level paremater to showMenu to draw child menu to the right 
  */
 
-#define MENU_ROWS_VISIBLE 23
+#define MENU_ROWS_VISIBLE 28
 #define MENU_ROWS_LENGTH 20
 
 #define BUTTON_DOWN 80
@@ -208,9 +209,9 @@ int32_t enterValue(int x, int y, int msg, long int curVal, bool isSigned, int le
   return retVal;
 }
 
-void insertProgramLine(int number, bool edit){
+void insertProgramLine(int lpos, int numLine, bool edit){
   int32_t command = 0, mem = -1;
-  uint8_t var_pos = 0, bit_pos = 0, selPosX = 0, selPosY = number;
+  uint8_t var_pos = 0, bit_pos = 0, selPosX = lpos, selPosY = numLine;
   int8_t comGroup = showMenu(selPosX, selPosY, commandGroupMenu, NULL, 0, COMM_MENU_SIZE, &selPosX, &selPosY);
   int32_t value = 0;
   if(comGroup>=0){
@@ -259,8 +260,8 @@ void insertProgramLine(int number, bool edit){
           printMessageAndWaitForButton(LIMIT_MSG);
         }else {
           if(!edit){
-            if(number < PS){        
-              for(int i=PS;i>number;i--){
+            if(numLine < PS){        
+              for(int i=PS;i>numLine;i--){
                 program[i] = program[i-1];
               }
             }
@@ -268,11 +269,11 @@ void insertProgramLine(int number, bool edit){
           }
 
           if(mem == CS || mem == AD){ //constant or address
-            program[number] = s_stll_v(command, mem, value);
+            program[numLine] = s_stll_v(command, mem, value);
             programChanged = 0;
           }
           else{
-            program[number] = s_stll_m(command, mem, var_pos, bit_pos);
+            program[numLine] = s_stll_m(command, mem, var_pos, bit_pos);
             programChanged = 0;
           }
         }
@@ -294,22 +295,23 @@ void removeProgramLine(int number){
 void editProgram(){
   int pl = 0; int j=0;
   int pos = 0; 
-  
+  int rowlen = 0, mrowlen = 0;
   unsigned char newButtons = -1;
   displaySetTextNormal();
 
   while(true){
 
     if(IS_PRESSED(newButtons, BUTTON_ENTER) && pos < PS) {
-      int res = showMenu(1, 0, editMenu, NULL, 0, 3, NULL, NULL);
+      uint8_t selPosX = mrowlen, selPosY = pos-pl;
+      int res = showMenu(selPosX, selPosY, editMenu, NULL, 0, 3, &selPosX, &selPosY);
       switch(res){
-        case 0: insertProgramLine(pos, false);break;
-        case 1: insertProgramLine(pos, true);break;
+        case 0: insertProgramLine(selPosX, selPosY, false);break;
+        case 1: insertProgramLine(selPosX, selPosY, true);break;
         case 2: removeProgramLine(pos);if(pos>0)pos--;if(pl>0)pl--;displayClear();break;
         default: break;
       }
     }else if(IS_PRESSED(newButtons, BUTTON_ENTER) && pos == PS && PS<MAX_PROGRAM_SIZE) {
-      insertProgramLine(pos, false);
+      insertProgramLine(mrowlen, pos-pl, false);
     }
     
     //display additional menu on bottom of the screen
@@ -348,24 +350,38 @@ void editProgram(){
         }
 
       if(i<PS){//display line of code
-        displayPrint(i+1);displayPrint(": ");
-        printA(comStr, func_id);
-        displayPrint(" ");
-        if(mem_pos>0){
-
-          printA(memStr, mem_pos);
-          if(mem_pos == CS || mem_pos == AD)//constant
-            displayPrint((long int)value);
-          else
-            displayPrint((long)var_pos);
+      	/**/
+      	char* buf = editorBufStr;
+      	itoa(i+1, buf, 10);
+      	buf += strlen(buf);
+      	strcpy_P(buf, ": ");
+      	buf += 2;
+		strcpy_P(buf, (char*)pgm_read_word(&(comStr[func_id])));
+		buf += strlen(comStr[func_id]);
+		strcpy_P(buf, " "); buf++;
+		if(mem_pos>0){
+			strcpy_P(buf, (char*)pgm_read_word(&(memStr[mem_pos])));
+			buf += strlen(memStr[mem_pos]);
+			
+          	if(mem_pos == CS || mem_pos == AD){
+            	itoa(value, buf, 10);
+            }
+          	else{
+          		itoa(var_pos, buf, 10);
+			}
+			buf += strlen(buf);//?
             
-          uint8_t enterBit = pgm_read_word(&memBitAquireEnabled[mem_pos]);
-          if(enterBit == 1){
-            displayPrint(".");
-            displayPrint((long)bit_pos);
-          }
-        }
-        
+          	uint8_t enterBit = pgm_read_word(&memBitAquireEnabled[mem_pos]);
+          	if(enterBit == 1){
+            	strcpy_P(buf, "."); buf++;
+            	itoa(bit_pos, buf, 10);
+			}
+		}
+      	rowlen = strlen(editorBufStr) + 2;
+      	if(mrowlen < rowlen)
+      		mrowlen = rowlen;
+      	displayPrint(editorBufStr);
+          
         /*TODO*/
         //fillStr(editorBufStr, ' ', MENU_ROWS_LENGTH - rowlen);
 	    //displayPrint(editorBufStr);
