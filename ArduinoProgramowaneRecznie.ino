@@ -4,12 +4,73 @@
 #include "editor.h"
 
 #include "Adafruit_FRAM_I2C.h"
+#include "TimeLib.h"
+#include "DS1307RTC.h"
 
 Adafruit_EEPROM_I2C i2ceeprom;
 
 #define SCREEN_SAVER_TIME 60
 #define EXIT_RUNNING_TIME 6
 #define EXIT_RUNNNING_BUTTONS(BUTTONS) IS_PRESSED(BUTTONS, BUTTON_LEFT) && IS_PRESSED(BUTTONS, BUTTON_RIGHT)
+
+//Remember you first have to set RTC otherwise it will be stopped
+int checkRTC(){
+
+  tmElements_t tm;
+  /*tm.Hour = 13;
+  tm.Minute = 47;
+  tm.Second = 29;
+  tm.Day = 26;
+  tm.Month = 03;
+  tm.Year = 23;
+  if (RTC.write(tm)) {
+      //config = true;
+  }*/
+
+  int i = 0, sec1 = 0, sec2 = 0;
+  while(i<3 && sec1 == 0){
+    if (RTC.read(tm)) {
+      sec1 = tm.Second;
+    }
+    i++;
+    delay(1000);
+  }
+  i = 0;
+  while(i<3 && sec2 == 0){
+    delay(1500);
+    if (RTC.read(tm)) {
+      sec2 = tm.Second;
+    }
+    i++;
+  }
+  
+  /*displayClear();
+  displaySetCursor(0, 0);
+  displayPrint(sec1);  displayPrint(" ");   displayPrint(sec2);
+  displayDisplay();
+  delay(3000);*/
+  
+  if(sec1 != 0 && sec2 != 0 && sec1 != sec2){
+    return 1;
+  }
+  return 0;
+}
+
+int checkFRAM(){
+  if (i2ceeprom.begin(0x50)) {  // you can stick the new i2c addr in here, e.g. begin(0x51);
+    uint8_t existingVal = i2ceeprom.read(0x0);
+    i2ceeprom.write(0x0, 0xaa);
+    uint8_t test = i2ceeprom.read(0x0);
+    if(test == 0xaa){
+      return 1;
+    }else{
+      return 0;
+    }
+    i2ceeprom.write(0x0, existingVal);
+  } else {
+    return 0;
+  }
+}
 
 void setup() {
   Serial.begin(9600);
@@ -42,22 +103,39 @@ void setup() {
   TIMSK1|=(1<<OCIE1A);
   interrupts();
   
-  readProgramFromEeprom();
+  //readProgramFromEeprom();
   programChanged = 1;
 
-
+  //test connected devices
   displayClear();
   displaySetTextNormal();
   displaySetCursor(0, 0);
-  if (i2ceeprom.begin(0x50)) {  // you can stick the new i2c addr in here, e.g. begin(0x51);
-    displayPrint("Found I2C FRAM");
+  displayPrint("OLED test passed");
+  displaySetCursor(0, 8);
+
+  if(checkRTC()){
+    displayPrint("RTC test passed");
     displayDisplay();
-    i2ceeprom.write(0x0, 0xaa);
-  } else {
-    displayPrint("FRAM not identified");
+  }else{
+    displayPrint("RTC test not passed");
     displayDisplay();
-    //while (1);
   }
+
+  displaySetCursor(0, 16);
+
+  if(checkFRAM()){
+    displayPrint("FRAM test passed");
+    displayDisplay();
+  }else{
+    displayPrint("FRAM test not passed");
+    displayDisplay();
+  }
+
+  delay(4000);
+  
+  displayClear();
+  displaySetTextNormal();
+  displaySetCursor(0, 0);
 }
 
 const char _0dot[] PROGMEM = {""};
