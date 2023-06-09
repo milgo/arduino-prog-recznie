@@ -46,8 +46,8 @@ uint32_t volatile timer[8];
 int32_t volatile counter[8];
 
 const PROGMEM uint8_t fixedTimerTime[]  = {10, 20, 40, 50, 80, 100, 160, 200};
-const PROGMEM uint8_t diPins[] = {10, 11, 12, 13, 13, 13, 13, 13};
-const PROGMEM uint8_t doPins[] = {8, 7, 6, 5, 5, 5, 5, 5};
+const uint8_t diPins[] = {10, 11, 12, 13};
+const uint8_t doPins[] = {8, 7, 6, 5};
 
 uint8_t volatile *const *memMap[] = {
   memNull,
@@ -230,7 +230,7 @@ void setMem(uint8_t ptr, uint8_t id, uint8_t val){
 
 uint8_t getMemBit(uint8_t ptr, uint8_t id, uint8_t b){
   if(ptr == 1){
-    return digitalRead(diPins[id]);
+    return ~digitalRead(diPins[id]) & 0x1;
   }
   return (*getMemPtr(ptr, id)>>b) & 0x1;
 }
@@ -247,7 +247,7 @@ void setMemBit(uint8_t ptr, uint8_t id, uint8_t b, uint8_t v){
 void resetMemBit(uint8_t ptr, uint8_t id, uint8_t b){
   mask = 1 << b;
   if(ptr == 4){
-    digitalWrite(id,0);
+    digitalWrite(doPins[id],0);
   }else{
     *memMap[ptr][id] = (*memMap[ptr][id] & ~mask);
   }

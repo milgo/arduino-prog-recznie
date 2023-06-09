@@ -72,7 +72,7 @@ int checkFRAM(){
   }
 }
 
-void testIO{
+void testIO(){
   //DI0 - PB2 - D10
   //DI1 - PB3 - D11
   //DI2 - PB4 - D12
@@ -82,27 +82,50 @@ void testIO{
   //DO1 - PD7 - D7
   //DO2 - PD6 - D6
   //DO3 - PD5 - D5
+  displayClear();
+  displaySetTextNormal();
+  displaySetCursor(0, 0);
+  long l = digitalRead(10);
+  displayPrint(l);
+  l = digitalRead(11);
+  displayPrint(l);
+  l = digitalRead(12);
+  displayPrint(l);
+  l = digitalRead(13);
+  displayPrint(l);
+  displayDisplay();
+
+  delay(2000);
+  digitalWrite(5, 1);
+  delay(2000);
+  digitalWrite(5, 0);
+  delay(2000);
+  digitalWrite(6, 1);
+  delay(2000);
+  digitalWrite(6, 0);
+  delay(2000);
+  digitalWrite(7, 1);
+  delay(2000);
+  digitalWrite(7, 0);
+  delay(2000);
+  digitalWrite(8, 1);
+  delay(2000);
+  digitalWrite(8, 0);
 }
 
 void setup() {
   Serial.begin(9600);
   setupGUI();
   
-  pinMode(0, INPUT);
-  pinMode(1, INPUT);
-  pinMode(2, INPUT);
-  pinMode(3, INPUT);
-  pinMode(4, INPUT);
-  pinMode(5, INPUT);
-  pinMode(6, INPUT);
-  pinMode(7, INPUT);
+  pinMode(10, INPUT_PULLUP);
+  pinMode(11, INPUT_PULLUP);
+  pinMode(12, INPUT_PULLUP);
+  pinMode(13, INPUT_PULLUP);
 
   pinMode(8, OUTPUT);
-  pinMode(9, OUTPUT);
-  pinMode(10, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(12, OUTPUT);
-  pinMode(13, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(5, OUTPUT);
 
   noInterrupts();
   TCCR1A = 0;
@@ -259,7 +282,7 @@ void runProgram(){
 int newMenuPosition = -2;
 
 void loop() {
-  
+
   switch(newMenuPosition){
     case -1: break;
     case 0:{ 
@@ -278,6 +301,6 @@ void loop() {
     default: runProgram(); break;
   }
   
-  newMenuPosition = showMenu(mainMenu, NULL, 0, MAIN_MENU_SIZE);/**/
+  newMenuPosition = showMenu(mainMenu, NULL, 0, MAIN_MENU_SIZE);
      
 }
