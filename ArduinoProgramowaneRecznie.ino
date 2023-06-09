@@ -72,6 +72,18 @@ int checkFRAM(){
   }
 }
 
+void testIO{
+  //DI0 - PB2 - D10
+  //DI1 - PB3 - D11
+  //DI2 - PB4 - D12
+  //DI3 - PB5 - D13
+
+  //DO0 - PB0 - D8   
+  //DO1 - PD7 - D7
+  //DO2 - PD6 - D6
+  //DO3 - PD5 - D5
+}
+
 void setup() {
   Serial.begin(9600);
   setupGUI();
@@ -110,29 +122,29 @@ void setup() {
   displayClear();
   displaySetTextNormal();
   displaySetCursor(0, 0);
-  displayPrint("OLED test passed");
+  printA(message, OLED_TEST_PASSED);
   displaySetCursor(0, 8);
 
   if(checkRTC()){
-    displayPrint("RTC test passed");
+    printA(message, RTC_TEST_PASSED);
     displayDisplay();
   }else{
-    displayPrint("RTC test not passed");
+    printA(message, RTC_TEST_NOT_PASSED);
     displayDisplay();
   }
 
   displaySetCursor(0, 16);
 
   if(checkFRAM()){
-    displayPrint("FRAM test passed");
+    printA(message, FRAM_TEST_PASSED);
     displayDisplay();
   }else{
-    displayPrint("FRAM test not passed");
+    printA(message, FRAM_TEST_NOT_PASSED);
     displayDisplay();
   }
 
   delay(4000);
-  
+
   displayClear();
   displaySetTextNormal();
   displaySetCursor(0, 0);
@@ -248,15 +260,7 @@ int newMenuPosition = -2;
 
 void loop() {
   
-  displayClear();
-  displaySetTextNormal();
-  displaySetCursor(0, 0);
-  //printA(message, NOPROGRAM_MSG);
-  //displayPrint("Hello");
-  uint8_t test = i2ceeprom.read(0x0);
-  displayPrint(test);
-  displayDisplay();
-  /*switch(newMenuPosition){
+  switch(newMenuPosition){
     case -1: break;
     case 0:{ 
           int8_t res = showMenu(runMenu, NULL, 0, 3);
@@ -274,6 +278,6 @@ void loop() {
     default: runProgram(); break;
   }
   
-  newMenuPosition = showMenu(mainMenu, NULL, 0, MAIN_MENU_SIZE);*/
+  newMenuPosition = showMenu(mainMenu, NULL, 0, MAIN_MENU_SIZE);/**/
      
 }

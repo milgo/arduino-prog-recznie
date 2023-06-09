@@ -26,6 +26,11 @@
 #define ENTER_COUNTER_NR_MSG 19
 #define ENTER_PROGRAM_LINE_NR_MSG 20
 #define CLEAR_LOCAL_PROGRAM_MSG 21
+#define OLED_TEST_PASSED 22
+#define RTC_TEST_PASSED 23
+#define RTC_TEST_NOT_PASSED 24
+#define FRAM_TEST_PASSED 25
+#define FRAM_TEST_NOT_PASSED 26
 
 const char _0[] PROGMEM = "0"; 
 const char _1[] PROGMEM = "1"; 
@@ -64,6 +69,12 @@ const char enterTimerNrMsgStr[] PROGMEM = "Enter timer nr:";
 const char enterCounterNrMsgStr[] PROGMEM = "Enter counter nr:";
 const char enterProgramLineMsgStr[] PROGMEM = "Enter program line:";
 
+const char oledTestPassed[] PROGMEM = "OLED test passed";
+const char rtcTestPassed[] PROGMEM = "RTC test passed";
+const char rtcTestNotPassed[] PROGMEM = "RTC test not passed";
+const char framTestPassed[] PROGMEM = "FRAM test passed";
+const char framTestNotPassed[] PROGMEM = "FRAM test not passed";
+
 const char *const message[] PROGMEM = {
   enterVariablePositionMsgStr, 
   enterValueMsgStr,
@@ -86,7 +97,12 @@ const char *const message[] PROGMEM = {
   enterTimerNrMsgStr,
   enterCounterNrMsgStr,
   enterProgramLineMsgStr,
-  clearMsgStr
+  clearMsgStr,
+  oledTestPassed,
+  rtcTestPassed,
+  rtcTestNotPassed,
+  framTestPassed,
+  framTestNotPassed
   };
 
 const char runMenuSaveAndRunStr[] PROGMEM = "Save&Run";
@@ -226,8 +242,8 @@ const char *const comDesc[] PROGMEM = {
   };
 
 const char memNULLStr[] PROGMEM = "~";
-const char memDOStr[] PROGMEM = "D";
-const char memDIStr[] PROGMEM = "D";
+const char memDOStr[] PROGMEM = "DO";
+const char memDIStr[] PROGMEM = "DI";
 const char memMStr[] PROGMEM = "M";
 const char memTStr[] PROGMEM = "T";
 const char memMBStr[] PROGMEM = "MB";
@@ -420,10 +436,10 @@ const char memGroups[] PROGMEM = {0, 0,
                           0, 0};                          
 
 const int16_t memValidationRules[] PROGMEM = {0, 0, 0, 0, 0, //signed?, how many digits?, max digit, min value, max value 
-                                  0, 1, 7, 0, 7, //DI
+                                  0, 1, 7, 0, 4, //DI
                                   0, 1, 7, 0, 7, //T
                                   0, 2, 9, 0, 63,//M
-                                  0, 2, 9, 8, 13,//DO
+                                  0, 2, 9, 0, 4,//DO
                                   1, 5, 9, -32768, 32767,//CONST
                                   0, 1, 7, 0, 7,//AI
                                   0, 2, 9, 0, 63,//MB
