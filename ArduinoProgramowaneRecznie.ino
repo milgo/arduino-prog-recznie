@@ -137,9 +137,6 @@ void setup() {
   TCCR1B|=(1<<CS11)|(1<<WGM12);
   TIMSK1|=(1<<OCIE1A);
   interrupts();
-  
-  //readProgramFromEeprom();
-  programChanged = 1;
 
   //test connected devices
   displayClear();
@@ -205,8 +202,6 @@ ISR(TIMER1_COMPA_vect){
   }
 }
 
-
-
 void runProgram(){
   //load
   setupMem();
@@ -219,8 +214,8 @@ void runProgram(){
   exitRunningCounter = EXIT_RUNNING_TIME;
   
   //run
-  if(program[0]!=0x0){
-    
+  if(readProgramFromEeprom()){
+    programChanged = 0;
     while(exitRunningCounter>0){
 
       readAnalog();
@@ -268,7 +263,7 @@ void runProgram(){
       }
     }
 
-    readProgramFromEeprom();
+    //readProgramFromEeprom();
     
   }else{
     displayClear();
@@ -296,7 +291,7 @@ void loop() {
           break;
           } 
     case 1: editProgram(); break;
-    case 2: if(programChanged==0)writeProgramToEeprom();else printMessageAndWaitForButton(NO_CHANGES);break;
+    case 2: if(programChanged)writeProgramToEeprom();else printMessageAndWaitForButton(NO_CHANGES);break;
     case 3: printA(message, CLEAR_LOCAL_PROGRAM_MSG); displayDisplay(); clearProgramLocal(); delay(1000); break;
     default: runProgram(); break;
   }

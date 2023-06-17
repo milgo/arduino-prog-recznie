@@ -7,7 +7,7 @@
 uint32_t program[MAX_PROGRAM_SIZE];
 int32_t accumulator[2];
 uint8_t nullByte;
-uint8_t programChanged = 1;
+uint8_t programChanged = 0;
 void _nop(uint32_t param);
 
 void (*func_ptr[])(uint32_t) = {_nop, _and, _or, _nand, _nor, _assign, _s, _r, _fp, _fn, 
@@ -85,31 +85,38 @@ void writeProgramToEeprom(){
   }
   //Write PS and the end of eeprom
   EEPROM.write(0x3FF, PS);
-  programChanged = 1;
+  EEPROM.write(0x3FE, VERSION & 0xFF);
+  EEPROM.write(0x3FD, (VERSION >> 8) & 0xFF);
+  programChanged = 0;
   delay(1000);
 }
 
-void readProgramFromEeprom(){
+int readProgramFromEeprom(){
   int addr = 0;
-  PS = EEPROM.read(0x3FF);
-  if(PS == 0xFF)
-    PS = 0;
-  //Serial.println(PS);
-  for(uint8_t i=0; i<PS; i++){
-    program[i] = ((uint32_t)EEPROM.read(addr) << 24UL) +
-                  ((uint32_t)EEPROM.read(addr+1) << 16UL)+
-                  ((uint32_t)EEPROM.read(addr+2) << 8UL) +
-                  ((uint32_t)EEPROM.read(addr+3));
-    addr+=4;
+  int ver = EEPROM.read(0x3FE) | EEPROM.read(0x3FD) << 8;
+  if(ver == VERSION){
+    PS = EEPROM.read(0x3FF);
+    if(PS == 0xFF)
+      PS = 0;
+    //Serial.println(PS);
+    for(uint8_t i=0; i<PS; i++){
+      program[i] = ((uint32_t)EEPROM.read(addr) << 24UL) +
+                    ((uint32_t)EEPROM.read(addr+1) << 16UL)+
+                    ((uint32_t)EEPROM.read(addr+2) << 8UL) +
+                    ((uint32_t)EEPROM.read(addr+3));
+      addr+=4;
+    }
+    programChanged = 0;
+    return 1;
   }
-  programChanged = 1;
+  return 0;
 }
 
 void clearProgramLocal(){
   for(uint8_t i=0; i<PS; i++){
       program[i] = 0;
   }
-  programChanged = 0;
+  programChanged = 1;
   PS = 0;
 }
 

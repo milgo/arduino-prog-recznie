@@ -5,6 +5,7 @@
 #include <stdint.h>
 #include <avr/io.h>
 
+#define VERSION 10100
 #define FUNC_BIT_POS 24
 #define MEM_BIT_POS 16
 #define FUNC_PARAM_MASK 0xFFFFUL
@@ -87,6 +88,6 @@ extern void timersRoutine();
 extern void readAnalog();
 extern void writeAnalog();
 extern void writeProgramToEeprom();
-extern void readProgramFromEeprom();
+extern int readProgramFromEeprom();
 extern void clearProgramLocal();
 #endif //_STL_H

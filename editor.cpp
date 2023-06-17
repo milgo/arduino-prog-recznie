@@ -218,11 +218,11 @@ void insertProgramLine(int number, bool edit){
 
           if(mem == CS || mem == AD){ //constant or address
             program[number] = s_stll_v(command, mem, value);
-            programChanged = 0;
+            programChanged = 1;
           }
           else{
             program[number] = s_stll_m(command, mem, var_pos, bit_pos);
-            programChanged = 0;
+            programChanged = 1;
           }
         }
       }
@@ -235,7 +235,7 @@ void removeProgramLine(int number){
     program[i] = program[i+1];
   }
   PS--;
-  programChanged = 0;
+  programChanged = 1;
 }
 
 void editProgram(){
