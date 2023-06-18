@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "editor.h"
 
@@ -37,10 +38,52 @@ void fillStr(char *dest, char c, int len){
 	}
 }
 
+void writeBinFile(void)
+{
+    FILE *ptr; 
+    unsigned char a[] = {0xFF}; 
+    ptr = fopen("test.bin","wb"); 
+    fwrite (a, sizeof(unsigned char), 1, ptr);
+    fclose (ptr);
+}
+
+void readEepromFile(void)
+{
+    static const size_t bufSize = 1024;
+    int i;
+    FILE *ptr;
+    unsigned char buff[bufSize];
+
+    ptr = fopen("eeprom.eep","rb");
+    const size_t fileSize = fread(buff, sizeof(unsigned char), bufSize, ptr);
+    fclose (ptr);
+	    
+    int ver = buff[0x3FE] | buff[0x3FD] << 8;
+    int programSize = buff[0x3FF];
+
+    printf("Program version = %d \n", ver);
+    printf("Program size = %d\n", programSize);
+   
+	for(i = 0; i < programSize; i++)
+    {
+        program[i]= ((uint32_t)buff[i*4] << 24UL) +
+                    ((uint32_t)buff[i*4+1]  << 16UL)+
+                    ((uint32_t)buff[i*4+2]  << 8UL) +
+                    ((uint32_t)buff[i*4+3] );
+                    printf("%d", program[i]);
+    }
+    PS = programSize;
+}
+
 void editorNewFile(){}
 void editorOpenFile(){}
 void editorSaveFile(){}
-void editorUploadFile(){}
+void editorUploadFile(){
+	displaySetCursor(0, 0);
+	system("avrdude.exe -c usbasp -p m328p -P usb -U eeprom:r:\"eeprom.eep\":r ");
+	readEepromFile();
+	//displayClear();
+}
 void editorDownloadFile(){}
 
 /*memset(editorBufStr, ' ', MENU_ROWS_LENGTH - rowlen);
