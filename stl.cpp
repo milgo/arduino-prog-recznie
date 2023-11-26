@@ -1,5 +1,8 @@
-
 #include <Arduino.h>
+#include <EEPROM.h>
+#include <stdint.h>
+#include <avr/io.h>
+
 #include "stl.h"
 #include "messages.h"
 #include "gui.h"

@@ -1,3 +1,4 @@
+//#include "progmem.h"
 #include "messages.h"
 #include "stl.h"
 #include "gui.h"
@@ -17,11 +18,11 @@ Adafruit_EEPROM_I2C i2ceeprom;
 int checkRTC(){
 
   tmElements_t tm;
-  /*tm.Hour = 13;
-  tm.Minute = 47;
-  tm.Second = 29;
-  tm.Day = 26;
-  tm.Month = 03;
+  /*tm.Hour = 23;
+  tm.Minute = 55;
+  tm.Second = 00;
+  tm.Day = 3;
+  tm.Month = 11;
   tm.Year = 23;
   if (RTC.write(tm)) {
       //config = true;

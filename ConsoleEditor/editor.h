@@ -2,7 +2,7 @@
 #define __EDITOR_H
 
 #include <string.h>
-#include "gui.h"
+#include "../gui.h"
 
 #define strcpy_P strcpy
 #define pgm_read_byte(x) (*x)

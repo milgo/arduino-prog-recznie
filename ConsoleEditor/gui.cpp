@@ -1,6 +1,6 @@
 #include <conio.h>
 #include <stdlib.h>
-#include "gui.h"
+#include "../gui.h"
 #include "windows.h"
 
 #define strcpy_P strcpy

@@ -1,7 +1,6 @@
 #ifndef _MESSAGES_H
 #define _MESSAGES_H
 
-#include <avr/pgmspace.h>
 #include "stl.h"
 
 #define ENTER_VARIABLE_POS_MSG 0

@@ -7,6 +7,8 @@
 #include "Adafruit_GFX.h"
 #include "Adafruit_SSD1306.h"
 #include <avr/pgmspace.h>
+#include "messages.h"
+
 
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 PCF8574 pcf20(0x20);

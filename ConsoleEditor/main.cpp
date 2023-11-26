@@ -3,8 +3,11 @@
 #include <string.h>
 #include <conio.h>
 #include <math.h>
+
+#include "progmem.h"
 #include "editor.h"
-#include "messages.h"
+#include "../messages.h"
+
 
 #define WHITE_ON_BLACK 15
 #define BLACK_ON_WHITE 240

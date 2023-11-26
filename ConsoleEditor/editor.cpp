@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "editor.h"
-
+#include "progmem.h"
+#include "../messages.h"
 /**
  * 1. Ignore PROGMEM from messages.h (try overriding #define PROGMEM with some other attribute)
  * 2. Implement new pgm_read_word and pgm_read_byte (try "#define pgm_read_word(x) x" to ignore)
@@ -11,18 +12,42 @@
 #define MENU_ROWS_VISIBLE 28
 #define MENU_ROWS_LENGTH 20
 
-#define BUTTON_DOWN 80
-#define BUTTON_LEFT 75
-#define BUTTON_RIGHT 77
-#define BUTTON_UP 72
-#define BUTTON_ENTER 13
+#ifdef BUTTON_DOWN
+	#undef BUTTON_DOWN
+	#define BUTTON_DOWN 80
+#endif
+
+#ifdef BUTTON_LEFT
+	#undef BUTTON_LEFT
+	#define BUTTON_LEFT 75
+#endif
+
+#ifdef BUTTON_RIGHT
+	#undef BUTTON_RIGHT
+	#define BUTTON_RIGHT 77
+#endif
+
+#ifdef BUTTON_UP
+	#undef BUTTON_UP
+	#define BUTTON_UP 72
+#endif
+
+#ifdef BUTTON_ENTER
+	#undef BUTTON_ENTER
+	#define BUTTON_ENTER 13
+#endif
+
 #define EXTENDED 0
 #define F1 59
 #define F2 60
 #define F3 61
 #define F4 62
 #define F5 63
-#define IS_PRESSED(BUTTONS, BUTTON) (BUTTONS==BUTTON)
+
+#ifdef IS_PRESSED
+	#undef IS_PRESSED
+	#define IS_PRESSED(BUTTONS, BUTTON) (BUTTONS==BUTTON)
+#endif
 
 int menuPosition = 0;
 int selectedPosition = 0;

@@ -1,10 +1,6 @@
 #ifndef _STL_H
 #define _STL_H
 
-#include <EEPROM.h>
-#include <stdint.h>
-#include <avr/io.h>
-
 #define VERSION 10100
 #define FUNC_BIT_POS 24
 #define MEM_BIT_POS 16

@@ -1,5 +1,5 @@
 #include "editor.h"
-
+#include "messages.h"
 /**
  * 1. Ignore PROGMEM from messages.h (try overriding #define PROGMEM with some other attribute)
  * 2. Implement new pgm_read_word and pgm_read_byte (try "#define pgm_read_word(x) x" to ignore)
@@ -88,7 +88,7 @@ int32_t enterValue(int msg, long int curVal, bool isSigned, int len, int maxDigi
     curVal*=-1;
   }
 
-  //convert to array
+  //convert to arrayp
   long int tmp = curVal;
   for(int j=len;j>0;j--){
     v[j]=tmp%10;
