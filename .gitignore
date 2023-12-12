@@ -1,1 +1,10 @@
 *.hex
+*.exe
+*.o
+tags
+*.swp
+*.eep
+*.elf
+*.bin
+*.gch
+*.bak
