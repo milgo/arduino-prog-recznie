@@ -277,6 +277,27 @@ void runProgram(){
 
 int newMenuPosition = -2;
 
+void setupClock(){
+	tmElements_t tm;
+	RTC.read(tm);
+	uint8_t value = enterValue(ENTER_HOUR_MSG, tm.Hour, 0, 2, 9);
+	if(value < 0 || value > 23){
+  	printMessageAndWaitForButton(MUST_BE_IN_RANGE, 0, 23);
+    return;
+	}else{
+		tm.Hour = value;
+		value = enterValue(ENTER_MINUTE_MSG, tm.Minute, 0, 2, 9);
+		if(value < 0 || value > 59){
+			printMessageAndWaitForButton(MUST_BE_IN_RANGE, 0, 59);
+			return;
+		}
+		else{
+			tm.Minute = value;
+			RTC.write(tm);
+		}
+	}
+}
+
 void loop() {
 
   switch(newMenuPosition){
@@ -294,6 +315,7 @@ void loop() {
     case 1: editProgram(); break;
     case 2: if(programChanged)writeProgramToEeprom();else printMessageAndWaitForButton(NO_CHANGES);break;
     case 3: printA(message, CLEAR_LOCAL_PROGRAM_MSG); displayDisplay(); clearProgramLocal(); delay(1000); break;
+    case 4: setupClock(); break;
     default: runProgram(); break;
   }
   

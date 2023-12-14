@@ -30,6 +30,8 @@
 #define RTC_TEST_NOT_PASSED 24
 #define FRAM_TEST_PASSED 25
 #define FRAM_TEST_NOT_PASSED 26
+#define ENTER_HOUR_MSG 27
+#define ENTER_MINUTE_MSG 28
 
 const char _0[] PROGMEM = "0"; 
 const char _1[] PROGMEM = "1"; 
@@ -73,6 +75,8 @@ const char rtcTestPassed[] PROGMEM = "RTC test passed";
 const char rtcTestNotPassed[] PROGMEM = "RTC test not passed";
 const char framTestPassed[] PROGMEM = "FRAM test passed";
 const char framTestNotPassed[] PROGMEM = "FRAM test not passed";
+const char enterHourMsgStr[] PROGMEM = "Enter hour:";
+const char enterMinuteMsgStr[] PROGMEM = "Enter minute:";
 
 const char *const message[] PROGMEM = {
   enterVariablePositionMsgStr, 
@@ -101,7 +105,9 @@ const char *const message[] PROGMEM = {
   rtcTestPassed,
   rtcTestNotPassed,
   framTestPassed,
-  framTestNotPassed
+  framTestNotPassed,
+	enterHourMsgStr,
+	enterMinuteMsgStr	
   };
 
 const char runMenuSaveAndRunStr[] PROGMEM = "Save&Run";
@@ -112,6 +118,7 @@ const char mainMenuRunStr[] PROGMEM = "Run";
 const char mainMenuEditStr[] PROGMEM = "Edit";
 const char mainMenuProgramStr[] PROGMEM = "Program";
 const char mainMenuClearStr[] PROGMEM = "Clear";
+const char mainMenuConfClockStr[] PROGMEM = "Set Clock";
 
 const char comMenuBasicStr[] PROGMEM = "Logic";
 const char comMenuMoveStr[] PROGMEM = "Move";
@@ -294,7 +301,8 @@ const char *const mainMenu[] PROGMEM = {
   mainMenuRunStr, 
   mainMenuEditStr, 
   mainMenuProgramStr, 
-  mainMenuClearStr
+  mainMenuClearStr,
+  mainMenuConfClockStr 
   };
 
 const char *const commandGroupMenu[] PROGMEM = {
