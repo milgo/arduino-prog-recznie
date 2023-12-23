@@ -32,6 +32,9 @@
 #define FRAM_TEST_NOT_PASSED 26
 #define ENTER_HOUR_MSG 27
 #define ENTER_MINUTE_MSG 28
+#define ENTER_DAY_MSG 29
+#define ENTER_MONTH_MSG 30
+#define ENTER_YEAR_MSG 31
 
 const char _0[] PROGMEM = "0"; 
 const char _1[] PROGMEM = "1"; 
@@ -77,6 +80,9 @@ const char framTestPassed[] PROGMEM = "FRAM test passed";
 const char framTestNotPassed[] PROGMEM = "FRAM test not passed";
 const char enterHourMsgStr[] PROGMEM = "Enter hour:";
 const char enterMinuteMsgStr[] PROGMEM = "Enter minute:";
+const char enterDayMsgStr[] PROGMEM = "Enter day:";
+const char enterMonthMsgStr[] PROGMEM = "Enter month:";
+const char enterYearMsgStr[] PROGMEM = "Enter year:";
 
 const char *const message[] PROGMEM = {
   enterVariablePositionMsgStr, 
@@ -107,7 +113,10 @@ const char *const message[] PROGMEM = {
   framTestPassed,
   framTestNotPassed,
 	enterHourMsgStr,
-	enterMinuteMsgStr	
+	enterMinuteMsgStr,
+	enterDayMsgStr,
+	enterMonthMsgStr,
+	enterYearMsgStr
   };
 
 const char runMenuSaveAndRunStr[] PROGMEM = "Save&Run";
@@ -118,7 +127,7 @@ const char mainMenuRunStr[] PROGMEM = "Run";
 const char mainMenuEditStr[] PROGMEM = "Edit";
 const char mainMenuProgramStr[] PROGMEM = "Program";
 const char mainMenuClearStr[] PROGMEM = "Clear";
-const char mainMenuConfClockStr[] PROGMEM = "Set Clock";
+const char mainMenuSetDateTimeStr[] PROGMEM = "Set Date/Time";
 
 const char comMenuBasicStr[] PROGMEM = "Logic";
 const char comMenuMoveStr[] PROGMEM = "Move";
@@ -302,7 +311,7 @@ const char *const mainMenu[] PROGMEM = {
   mainMenuEditStr, 
   mainMenuProgramStr, 
   mainMenuClearStr,
-  mainMenuConfClockStr 
+  mainMenuSetDateTimeStr
   };
 
 const char *const commandGroupMenu[] PROGMEM = {

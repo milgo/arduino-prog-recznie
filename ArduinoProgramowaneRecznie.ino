@@ -277,25 +277,40 @@ void runProgram(){
 
 int newMenuPosition = -2;
 
-void setupClock(){
+void setupDateTime(){
 	tmElements_t tm;
 	RTC.read(tm);
-	uint8_t value = enterValue(ENTER_HOUR_MSG, tm.Hour, 0, 2, 9);
+	uint8_t value = enterValue(ENTER_DAY_MSG, tm.Day, 0, 2, 9);
+	if(value < 1 || value > 31){
+		printMessageAndWaitForButton(MUST_BE_IN_RANGE, 1, 31);
+		return;				
+	} 
+	tm.Day = value;
+	value = enterValue(ENTER_MONTH_MSG, tm.Month, 0, 2, 9);
+	if(value < 1 || value > 12){
+		printMessageAndWaitForButton(MUST_BE_IN_RANGE, 1, 12);
+		return;				
+	} 
+	tm.Month = value;
+	value = enterValue(ENTER_YEAR_MSG, tmYearToY2k(tm.Year), 0, 2, 9);
+	if(value < 23 || value > 99){
+		printMessageAndWaitForButton(MUST_BE_IN_RANGE, 23, 99);
+		return;				
+	} 
+	tm.Year = y2kYearToTm(value);	
+	value = enterValue(ENTER_HOUR_MSG, tm.Hour, 0, 2, 9);
 	if(value < 0 || value > 23){
   	printMessageAndWaitForButton(MUST_BE_IN_RANGE, 0, 23);
     return;
-	}else{
-		tm.Hour = value;
-		value = enterValue(ENTER_MINUTE_MSG, tm.Minute, 0, 2, 9);
-		if(value < 0 || value > 59){
-			printMessageAndWaitForButton(MUST_BE_IN_RANGE, 0, 59);
-			return;
-		}
-		else{
-			tm.Minute = value;
-			RTC.write(tm);
-		}
 	}
+	tm.Hour = value;
+	value = enterValue(ENTER_MINUTE_MSG, tm.Minute, 0, 2, 9);
+	if(value < 0 || value > 59){
+		printMessageAndWaitForButton(MUST_BE_IN_RANGE, 0, 59);
+		return;
+	}
+	tm.Minute = value;
+	RTC.write(tm);
 }
 
 void loop() {
@@ -315,7 +330,7 @@ void loop() {
     case 1: editProgram(); break;
     case 2: if(programChanged)writeProgramToEeprom();else printMessageAndWaitForButton(NO_CHANGES);break;
     case 3: printA(message, CLEAR_LOCAL_PROGRAM_MSG); displayDisplay(); clearProgramLocal(); delay(1000); break;
-    case 4: setupClock(); break;
+    case 4: setupDateTime(); break;
     default: runProgram(); break;
   }
   
