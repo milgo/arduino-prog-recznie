@@ -76,6 +76,13 @@ void _ju(uint32_t param);
 void _jc(uint32_t param);
 void _jcn(uint32_t param);
 
+void _gy(uint32_t param);
+void _go(uint32_t param);
+void _gd(uint32_t param);
+void _gh(uint32_t param);
+void _gm(uint32_t param);
+void _gs(uint32_t param);
+
 extern void setupMem();
 extern void onLoopEnd();
 extern void executeCommandAt(int pl);

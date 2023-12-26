@@ -136,6 +136,7 @@ const char comMenuCompareStr[] PROGMEM = "Compare";
 const char comMenuTimersStr[] PROGMEM = "Timers";
 const char comMenuCounterStr[] PROGMEM = "Counters";
 const char comMenuJumpStr[] PROGMEM = "Jump";
+const char comMenuDateTimeStr[] PROGMEM = "Date/Time";
 
 const char editMenuInsertStr[] PROGMEM = "Insert";
 const char editMenuEditStr[] PROGMEM = "Edit";
@@ -178,6 +179,12 @@ const char comCounterLCStr[] PROGMEM = "LC ";
 const char comJumpUncStr[] PROGMEM = "JU ";
 const char comJumpCondStr[] PROGMEM = "JC ";
 const char comJumpCondNotStr[] PROGMEM = "JCN";
+const char comGetYearStr[] PROGMEM = "YE ";
+const char comGetMonthStr[] PROGMEM = "MO ";
+const char comGetDayStr[] PROGMEM = "DA ";
+const char comGetHourStr[] PROGMEM = "HO ";
+const char comGetMinuteStr[] PROGMEM = "MI ";
+const char comGetSecondStr[] PROGMEM = "SN ";
 
 const char comDescNOPStr[] PROGMEM = "No operation";
 const char comDescBasicAStr[] PROGMEM = "And";
@@ -217,6 +224,13 @@ const char comDescJumpUncStr[] PROGMEM = "Jump uncond.";
 const char comDescJumpCondStr[] PROGMEM = "Jump cond.";
 const char comDescJumpCondNotStr[] PROGMEM = "Jump cond. if not";
 
+const char comDescDateTimeGetYearStr[] PROGMEM = "Get year";
+const char comDescDateTimeGetMonthStr[] PROGMEM = "Get month";
+const char comDescDateTimeGetDayStr[] PROGMEM = "Get day";
+const char comDescDateTimeGetHourStr[] PROGMEM = "Get hour";
+const char comDescDateTimeGetMinuteStr[] PROGMEM = "Get minute";
+const char comDescDateTimeGetSecondStr[] PROGMEM = "Get second";
+
 const char *const comDesc[] PROGMEM = {
     comDescNOPStr,
     comDescBasicAStr,
@@ -253,7 +267,13 @@ const char *const comDesc[] PROGMEM = {
     comDescCompLtEqIStr,
     comDescJumpUncStr,
     comDescJumpCondStr,
-    comDescJumpCondNotStr
+    comDescJumpCondNotStr,
+		comDescDateTimeGetYearStr,
+		comDescDateTimeGetMonthStr,
+		comDescDateTimeGetDayStr,
+		comDescDateTimeGetHourStr,
+		comDescDateTimeGetMinuteStr,
+		comDescDateTimeGetSecondStr	
   };
 
 const char memNULLStr[] PROGMEM = "~";
@@ -321,10 +341,11 @@ const char *const commandGroupMenu[] PROGMEM = {
   comMenuCounterStr,
   comMenuAritmeticStr, 
   comMenuCompareStr,
-  comMenuJumpStr
+  comMenuJumpStr,
+	comMenuDateTimeStr					
   };
 
-const char comGroups[] = { 1, 10, 10, 12, 12, 18, 18, 23, 23, 27, 27, 33, 33, 36};  
+const char comGroups[] = { 1, 10, 10, 12, 12, 18, 18, 23, 23, 27, 27, 33, 33, 36, 36, 42};  
   
 const char *const editMenu[] PROGMEM = {
   editMenuInsertStr,
@@ -371,10 +392,17 @@ const char *const comStr[] PROGMEM = {
   comCompLtIStr,
   comCompGtEqIStr,
   comCompLtEqIStr,
-  comJumpUncStr,
-  comJumpCondStr,
-  comJumpCondNotStr
 
+	comJumpUncStr,
+  comJumpCondStr,
+  comJumpCondNotStr,
+
+	comGetYearStr,
+	comGetMonthStr,
+	comGetDayStr,
+	comGetHourStr,
+	comGetMinuteStr,
+	comGetSecondStr
   };
 
 
@@ -404,52 +432,47 @@ const char memGroups[] PROGMEM = {0, 0,
                           3, 5, 
                           3, 5, 
                           3, 4, 
-                          3, 4, 
+                          3, 4,//Basic 
                           
                           5, 10, 
-                          7, 11,
+                          7, 11,//Move
                           
                           2, 3, 
                           2, 3, 
                           2, 3, 
                           2, 3, 
                           2, 3, 
-                          2, 3, 
+                          2, 3,//Timers 
                           
                           11, 12, 
                           11, 12, 
                           11, 12, 
                           11, 12, 
-                          11, 12, 
+                          11, 12,//Counters 
                           
                           0, 0, 
                           0, 0, 
                           0, 0, 
-                          0, 0, 
+                          0, 0,//Aritmetic 
                           
                           0, 0,
                           0, 0, 
                           0, 0, 
                           0, 0, 
                           0, 0, 
-                          0, 0, 
+                          0, 0,//Compare 
                           
+                          12, 13, 
                           12, 13,
-                          12, 13,
-                          12, 13,
+                          12, 13,//Jump
                           
-                          0, 0,
-                          0, 0,
-                          0, 0,
-                          0, 0,
-                          0, 0,
-                          0, 0,
-                          0, 0,
-                          0, 0,
-                          0, 0,
-                          0, 0,
-                          0, 0,
-                          0, 0};                          
+													0, 0,
+													0, 0,
+													0, 0,
+													0, 0,
+													0, 0,
+													0, 0 //Date/Time
+};                          
 
 const int16_t memValidationRules[] PROGMEM = {0, 0, 0, 0, 0, //signed?, how many digits?, max digit, min value, max value 
                                   0, 1, 7, 0, 4, //DI

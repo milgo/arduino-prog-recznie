@@ -2,6 +2,7 @@
 #include <EEPROM.h>
 #include <stdint.h>
 #include <avr/io.h>
+#include "DS1307RTC.h"
 
 #include "stl.h"
 #include "messages.h"
@@ -18,7 +19,9 @@ void (*func_ptr[])(uint32_t) = {_nop, _and, _or, _nand, _nor, _assign, _s, _r, _
       _sp, _se, _sd, _ss, _sf, _rt, _cu, _cd, _cs, _cr, _cl, 
        _addI, _subI, _mulI, _divI,
        _eqI, _diffI, _gtI, _ltI, _gteqI, _lteqI,
-       _ju, _jc, _jcn};
+       _ju, _jc, _jcn,
+			 _gy, _go, _gd, _gh, _gm, _gs 
+};
  
 uint8_t volatile buttons;
 uint8_t volatile m[64];
@@ -26,6 +29,7 @@ uint8_t volatile t[8];
 uint8_t volatile ai[8];
 uint8_t volatile ao[12];
 uint8_t volatile c;
+tmElements_t tm;
 
 uint8_t volatile * const memNull[] = {&nullByte};
 uint8_t volatile * const memDI[] = {&nullByte};
@@ -156,6 +160,7 @@ void setupMem(){
   }
 
   activeAImask = 0x00;
+	RTC.read(tm);
 }
 
 void onLoopEnd(){
@@ -164,6 +169,7 @@ void onLoopEnd(){
   accumulator[0] = 0;
   RLO=0;
   cancel_RLO=true;
+	RTC.read(tm);
 }
 
 void timersRoutine(){//10ms
@@ -578,3 +584,29 @@ void _jcn(uint32_t param){
   if(RLO == 0)PC = addr - 2;
   cancel_RLO = true;
 }
+
+void _gy(uint32_t param){	
+	pushToAcc(tmYearToY2k(tm.Year));
+}
+
+void _go(uint32_t param){
+	pushToAcc(tm.Month);
+}
+
+void _gd(uint32_t param){
+	pushToAcc(tm.Day);
+}
+
+void _gh(uint32_t param){
+	pushToAcc(tm.Hour);
+}
+
+void _gm(uint32_t param){
+	pushToAcc(tm.Minute);
+}
+
+void _gs(uint32_t param){
+	pushToAcc(tm.Second);
+}
+
+
