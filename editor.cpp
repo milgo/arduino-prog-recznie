@@ -162,7 +162,7 @@ void insertProgramLine(int number, bool edit){
   int8_t comGroup = showMenu(commandGroupMenu, NULL, 0, COMM_MENU_SIZE);
   int32_t value = 0;
   if(comGroup>=0){
-    command = showMenu(comStr, comDesc, comGroups[comGroup*2], comGroups[comGroup*2+1]);
+    command = showMenu(comStr, comDesc, pgm_read_byte(&comGroups[comGroup*2]), pgm_read_byte(&comGroups[comGroup*2+1]));
 
     uint8_t memPtrFrom, memPtrTo;
     memPtrFrom = pgm_read_byte(&(memGroups[command*2]));
@@ -173,7 +173,7 @@ void insertProgramLine(int number, bool edit){
       if(memPtrFrom>0){ //if operation with mem selection
         mem = showMenu(memStr, memDesc, memPtrFrom, memPtrTo);
         if(mem >= 0){
-
+					
           /*casting int16_t to char ???*/
           char sig = pgm_read_word(&memValidationRules[mem*5]);
           char len = pgm_read_word(&memValidationRules[mem*5+1]);
@@ -189,15 +189,23 @@ void insertProgramLine(int number, bool edit){
             printMessageAndWaitForButton(MUST_BE_IN_RANGE, minimum, maximum);
             return;
           }
-          
-          if(mem != CS && mem != AD)//const
+         	
+					if(mem != CS && mem != AD)//const
             var_pos = value;
 
           uint8_t enterBit = pgm_read_word(&memBitAquireEnabled[mem]);
           if(enterBit == 1){
             bit_pos = enterValue(ENTER_BIT_POS_MSG, 0, 0, 1, 7);
           }
-  
+ 
+					uint8_t memTypeOpt = pgm_read_word(&memTypeOption[mem]);
+					if(memTypeOpt == 1){
+						uint8_t mType =	showMenu(memType, memTypeDesc, 0, 3);
+						mem = mem & 0x3F; //clear 2 MSB
+						mem |= mType << 6; //move mem type to 2 MSB
+				}else{
+					}//put mem symbol here??? % or $ or &
+   
         }
       }else{
         mem = 0;
@@ -271,8 +279,9 @@ void editProgram(){
       displaySetCursor(0, (i-pl)*FONT_HEIGHT);
       uint8_t func_id = program[i] >> FUNC_BIT_POS;
       uint16_t param = program[i] & FUNC_PARAM_MASK;
-      uint8_t mem_pos = (program[i] >> MEM_BIT_POS) & 0xFF;
-      uint8_t var_pos = param >> 4 & 0xFF;
+      uint8_t mem_pos = (program[i] >> MEM_BIT_POS) & 0x3F;
+ 			uint8_t mem_type = ((program[i] >> MEM_BIT_POS) >> 6) & 0x3;
+ 			uint8_t var_pos = param >> 4 & 0xFF;
       uint8_t bit_pos = param & 0xF;
       int value = param & FUNC_PARAM_MASK;
 
@@ -285,12 +294,15 @@ void editProgram(){
         printA(comStr, func_id);
         displayPrint(" ");
         if(mem_pos>0){
-
+					
+					printA(memType, mem_type);
           printA(memStr, mem_pos);
-          if(mem_pos == CS || mem_pos == AD)//constant
+          if(mem_pos == CS || mem_pos == AD){//constant
             displayPrint((long int)value);
-          else
+					}
+          else{
             displayPrint((long)var_pos);
+					}
             
           uint8_t enterBit = pgm_read_word(&memBitAquireEnabled[mem_pos]);
           if(enterBit == 1){

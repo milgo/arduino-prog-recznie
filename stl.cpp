@@ -26,8 +26,8 @@ void (*func_ptr[])(uint32_t) = {_nop, _and, _or, _nand, _nor, _assign, _s, _r, _
 uint8_t volatile buttons;
 uint8_t volatile m[64];
 uint8_t volatile t[8];
-uint8_t volatile ai[8];
-uint8_t volatile ao[12];
+uint8_t volatile ai[1];
+uint8_t volatile ao[1];
 uint8_t volatile c;
 tmElements_t tm;
 
@@ -44,8 +44,8 @@ uint8_t volatile * const memM[] = {&m[0], &m[1], &buttons, &m[3], &m[4], &m[5], 
                                    &m[56], &m[57], &m[58], &m[59], &m[60], &m[61], &m[62], &m[63]};
 uint8_t volatile * const memC[] = {&c};
 uint8_t volatile * const memT[] = {&t[0], &t[1], &t[2], &t[3], &t[4], &t[5], &t[6], &t[7]};
-uint8_t volatile * const memAI[] = {&ai[0], &ai[1], &ai[2], &ai[3], &ai[4], &ai[5], &ai[6], &ai[7]};
-uint8_t volatile * const memAO[] = {&ao[0], &ao[1], &ao[2], &ao[3], &ao[4], &ao[5], &ao[6], &ao[7], &ao[8], &ao[9], &ao[10], &ao[11]};
+uint8_t volatile * const memAI[] = {&ai[0]};
+uint8_t volatile * const memAO[] = {&ao[0]};
 
 uint8_t volatile activeAImask;
 uint8_t volatile fixedTimer[8];
@@ -53,8 +53,8 @@ uint32_t volatile timer[8];
 int32_t volatile counter[8];
 
 const PROGMEM uint8_t fixedTimerTime[]  = {10, 20, 40, 50, 80, 100, 160, 200};
-const uint8_t diPins[] = {10, 11, 12, 13};
-const uint8_t doPins[] = {8, 7, 6, 5};
+const uint8_t diPins[] PROGMEM = {10, 11, 12, 13};
+const uint8_t doPins[] PROGMEM = {8, 7, 6, 5};
 
 uint8_t volatile *const *memMap[] = {
   memNull,
@@ -138,8 +138,9 @@ void setupMem(){
   int i;
   for(i=0; i<64; i++)m[i] = 0;
   for(i=0; i<8; i++)t[i] = 0;
-  for(i=0; i<8; i++)ai[i] = 0;
-  for(i=0; i<12; i++)ao[i] = 0;
+  ai[0] = 0;
+  //for(i=0; i<8; i++)ai[i] = 0;
+  //for(i=0; i<12; i++)ao[i] = 0;
   for(i=0; i<8; i++)fixedTimer[i] = 0;
   for(i=0; i<8; i++)timer[i] = 0;
   for(i=0; i<8; i++)counter[i] = 0;
@@ -210,7 +211,7 @@ void pushToAcc(uint32_t param){
 }
 
 void readAnalog(){
-  for(int i=0; i<8; i++){
+  for(int i=0; i<1; i++){
     //Serial.print("activeAImask: ");Serial.print(activeAImask);Serial.print(", ");Serial.print(" 1<<i: ");Serial.println( 1<<i);
     if((activeAImask & 1<<i) == 1<<i){
       ai[i] = analogRead(i) >> 2; //10-bit to 8-bit
@@ -220,10 +221,10 @@ void readAnalog(){
 }
 
 void writeAnalog(){
-  for(int i=0; i<12; i++){
+  /*for(int i=0; i<12; i++){
      //Serial.print("analogWrite");Serial.println(i);
      if(ao[i]>0)analogWrite(i, ao[i]);
-  }
+  }*/
 }
 
 volatile uint8_t *getMemPtr(uint8_t ptr, uint8_t id){
@@ -246,14 +247,14 @@ void setMem(uint8_t ptr, uint8_t id, uint8_t val){
 
 uint8_t getMemBit(uint8_t ptr, uint8_t id, uint8_t b){
   if(ptr == 1){
-    return ~digitalRead(diPins[id]) & 0x1;
+    return ~digitalRead(pgm_read_byte(&diPins[id])) & 0x1;
   }
   return (*getMemPtr(ptr, id)>>b) & 0x1;
 }
 
 void setMemBit(uint8_t ptr, uint8_t id, uint8_t b, uint8_t v){
   if(ptr == 4){
-    digitalWrite(doPins[id],v);
+    digitalWrite(pgm_read_byte(&doPins[id]),v);
   }else{
     mask = 1 << b;
     *memMap[ptr][id] = ((*memMap[ptr][id] & ~mask) | v << b);
@@ -608,5 +609,3 @@ void _gm(uint32_t param){
 void _gs(uint32_t param){
 	pushToAcc(tm.Second);
 }
-
-

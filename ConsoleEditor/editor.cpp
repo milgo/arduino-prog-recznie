@@ -193,7 +193,7 @@ int showMenu(int x, int y,
 
     //Serial.println(newButtons, BIN);
     
-    delay(100);
+    delay(200);
   }
 }
 

@@ -121,7 +121,7 @@ const char *const message[] PROGMEM = {
 
 const char runMenuSaveAndRunStr[] PROGMEM = "Save&Run";
 const char runMenuDiscardStr[] PROGMEM = "Discard";
-const char runMenuCanceStr[] PROGMEM = "Cancel";
+const char runMenuCancelStr[] PROGMEM = "Cancel";
 
 const char mainMenuRunStr[] PROGMEM = "Run";
 const char mainMenuEditStr[] PROGMEM = "Edit";
@@ -304,26 +304,18 @@ const char memDescAOStr[] PROGMEM = "Analog output";
 const char memDescConstStr[] PROGMEM = "Constant";
 const char memDescAddrStr[] PROGMEM = "Program line number";
 
-const char *const memDesc[] PROGMEM = {
-    memDescNULLStr,
-    memDescDIStr,
-    memDescTStr,
-    memDescMStr,
-    memDescDOStr,
-    memDescConstStr,
-    memDescAIStr,
-    memDescMBStr,
-    memDescMWStr,
-    memDescMDStr,
-    memDescAOStr,
-    memDescCStr,
-    memDescAddrStr
-};
+const char memVolatileStr[] PROGMEM = "%";
+const char memNonVolatileStr[] PROGMEM = "$";
+const char memExternalStr[] PROGMEM = "&";
+
+const char memVolatileDescStr[] PROGMEM = "Volatile";
+const char memNonVolatileDescStr[] PROGMEM = "Non volatile";
+const char memExternalDescStr[] PROGMEM = "External";
 
 const char *const runMenu[] PROGMEM = {
   runMenuSaveAndRunStr, 
   runMenuDiscardStr, 
-  runMenuCanceStr
+  runMenuCancelStr
   };
 
 const char *const mainMenu[] PROGMEM = {
@@ -345,7 +337,7 @@ const char *const commandGroupMenu[] PROGMEM = {
 	comMenuDateTimeStr					
   };
 
-const char comGroups[] = { 1, 10, 10, 12, 12, 18, 18, 23, 23, 27, 27, 33, 33, 36, 36, 42};  
+const char comGroups[] PROGMEM = { 1, 10, 10, 12, 12, 18, 18, 23, 23, 27, 27, 33, 33, 36, 36, 42};  
   
 const char *const editMenu[] PROGMEM = {
   editMenuInsertStr,
@@ -405,8 +397,6 @@ const char *const comStr[] PROGMEM = {
 	comGetSecondStr
   };
 
-
-
 const char *const memStr[] PROGMEM = {
   memNULLStr,
   memDIStr,
@@ -421,6 +411,34 @@ const char *const memStr[] PROGMEM = {
   memAOStr,
   memCStr,
   memAddrStr
+};
+
+const char *const memDesc[] PROGMEM = {
+    memDescNULLStr,
+    memDescDIStr,
+    memDescTStr,
+    memDescMStr,
+    memDescDOStr,
+    memDescConstStr,
+    memDescAIStr,
+    memDescMBStr,
+    memDescMWStr,
+    memDescMDStr,
+    memDescAOStr,
+    memDescCStr,
+    memDescAddrStr
+};
+
+const char *const memType[] PROGMEM = {
+	memVolatileStr,
+	memNonVolatileStr,
+	memExternalStr
+};
+
+const char *const memTypeDesc[] PROGMEM = {
+	memVolatileDescStr,
+	memNonVolatileDescStr,
+	memExternalDescStr
 };
 
 const char memGroups[] PROGMEM = {0, 0, 
@@ -475,20 +493,21 @@ const char memGroups[] PROGMEM = {0, 0,
 };                          
 
 const int16_t memValidationRules[] PROGMEM = {0, 0, 0, 0, 0, //signed?, how many digits?, max digit, min value, max value 
-                                  0, 1, 7, 0, 4, //DI
+                                  0, 1, 7, 0, 3, //DI
                                   0, 1, 7, 0, 7, //T
                                   0, 2, 9, 0, 63,//M
-                                  0, 2, 9, 0, 4,//DO
+                                  0, 2, 9, 0, 3,//DO
                                   1, 5, 9, -32768, 32767,//CONST
-                                  0, 1, 7, 0, 7,//AI
+                                  0, 1, 7, 0, 1,//AI
                                   0, 2, 9, 0, 63,//MB
                                   0, 2, 9, 0, 31,//MW
                                   0, 1, 9, 0, 9,//MD        
-                                  0, 2, 9, 0, 11,//AO            
+                                  0, 2, 9, 0, 1,//AO            
                                   0, 1, 9, 0, 7,//C
                                   0, 2, 9, 1, MAX_PROGRAM_SIZE};//ADDR
                                
 const char memBitAquireEnabled[] PROGMEM = {0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0}; 
+const char memTypeOption[] PROGMEM = {0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0};
 const char memValueAquireMsg[] PROGMEM = {0, 
                                           ENTER_INPUT_NR_MSG, 
                                           ENTER_TIMER_NR_MSG, 
