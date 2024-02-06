@@ -1,0 +1,2160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="413.35959mm"
+   height="293.9191mm"
+   viewBox="0 0 413.35959 293.91909"
+   version="1.1"
+   id="svg9892"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="edycja.svg">
+  <defs
+     id="defs9886">
+    <marker
+       style="overflow:visible"
+       id="marker5748"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path5746" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker8110"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path8108" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker8100"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path8098" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker8090"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path8088" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker8070"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path8068" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker8060"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path8058" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker8050"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path8048" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker9598"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path9596" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker11144"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path11142" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker5748-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path5746-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker4888"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path4886" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6398"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path6396" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6408"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path6406" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6418"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path6416" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker5494"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path5492" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker7076"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path7074" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker7066"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path7064" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker7056"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path7054" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker7046"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path7044" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6996"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path6994" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker7616"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path7614" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker7606"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path7604" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker7596"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path7594" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker7586"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path7584" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker8120"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path8118" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker8110-7"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path8108-4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker8100-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path8098-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker8090-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path8088-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker8070-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path8068-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker8060-1"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path8058-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker8050-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path8048-4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker8882"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path8880" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker9200"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path9198" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker9598-7"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path9596-4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker11144-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path11142-9" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="598.59114"
+     inkscape:cy="792.28575"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1465"
+     inkscape:window-height="1040"
+     inkscape:window-x="153"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata9889">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(127.76196,-24.662291)">
+    <g
+       id="g15102">
+      <g
+         id="g4129"
+         transform="matrix(0.26458333,0,0,0.26458333,-98.33298,-338.98213)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299"
+         inkscape:export-ydpi="299">
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.08704"
+           id="rect3477"
+           width="51.118561"
+           height="35.55389"
+           x="479.99844"
+           y="1487.7904" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#000000;fill-opacity:1;stroke-width:1.90804"
+           x="681.38"
+           y="1052.9449"
+           id="text3445"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3443"
+             x="681.38"
+             y="1052.9449"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.90804">Run</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="681.44958"
+           y="1078.4774"
+           id="text3449"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3447"
+             x="681.44958"
+             y="1078.4774"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#ffffff;fill-opacity:1;stroke-width:1.90804">Edit</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="681.38"
+           y="1103.8496"
+           id="text3455"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3452"
+             x="681.38"
+             y="1103.8496"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">Program</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="681.38"
+           y="1129.283"
+           id="text3459"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3457"
+             x="681.38"
+             y="1129.283"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">Clear</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.690281"
+           id="rect3479"
+           width="148.63405"
+           height="148.76811"
+           x="477.00003"
+           y="1449" />
+      </g>
+      <g
+         id="g4095"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766"
+         transform="matrix(0.26458333,0,0,0.26458333,-155.48297,-338.98213)">
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.875193"
+           id="rect3481"
+           width="33.135639"
+           height="35.55389"
+           x="263.99841"
+           y="1649.7904" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="375.79474"
+           y="1192.8993"
+           id="text3485"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3483"
+             x="375.79474"
+             y="1192.8993"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#ffffff;fill-opacity:1;stroke-width:1.90804">[+]</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.690281"
+           id="rect3499"
+           width="148.63405"
+           height="148.76811"
+           x="261"
+           y="1647" />
+      </g>
+      <g
+         id="g4089"
+         transform="matrix(0.26458333,0,0,0.26458333,-186.87198,-338.24383)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766">
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.17771"
+           id="rect3501"
+           width="60.001621"
+           height="35.55389"
+           x="598.63403"
+           y="1647" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="849.21924"
+           y="1190.9269"
+           id="text3505"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3503"
+             x="849.21924"
+             y="1190.9269"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#ffffff;fill-opacity:1;stroke-width:1.90804">Logic</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="849.28882"
+           y="1216.4594"
+           id="text3509"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3507"
+             x="849.28882"
+             y="1216.4594"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">Move</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="849.21924"
+           y="1241.8315"
+           id="text3513"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3511"
+             x="849.21924"
+             y="1241.8315"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">Timers</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="849.21924"
+           y="1267.2649"
+           id="text3517"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3515"
+             x="849.21924"
+             y="1267.2649"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">Counters</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.690281"
+           id="rect3519"
+           width="148.63405"
+           height="148.76811"
+           x="595.63562"
+           y="1644.2096" />
+      </g>
+      <g
+         id="g4195"
+         transform="matrix(0.26458333,0,0,0.26458333,-179.69276,-338.24383)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766">
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.45436"
+           id="rect3527"
+           width="91.501549"
+           height="35.55389"
+           x="787.5"
+           y="1647" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="1116.4167"
+           y="1190.9269"
+           id="text3531"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3529"
+             x="1116.4167"
+             y="1190.9269"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#ffffff;fill-opacity:1;stroke-width:1.90804">A      :And</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="1116.4863"
+           y="1216.4594"
+           id="text3535"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3533"
+             x="1116.4863"
+             y="1216.4594"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">O      :Or</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="1116.4167"
+           y="1241.8315"
+           id="text3539"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3537"
+             x="1116.4167"
+             y="1241.8315"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">AN   :Not And</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="1116.4167"
+           y="1267.2649"
+           id="text3543"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3541"
+             x="1116.4167"
+             y="1267.2649"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">ON   :Not Or</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.690281"
+           id="rect3545"
+           width="148.63405"
+           height="148.76811"
+           x="784.50159"
+           y="1644.2096" />
+      </g>
+      <g
+         id="g4247"
+         transform="matrix(0.26458333,0,0,0.26458333,-167.75105,-338.24383)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766">
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.91797"
+           id="rect3549"
+           width="159.13567"
+           height="35.55389"
+           x="958.60962"
+           y="1719.3176" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="1358.1487"
+           y="1190.9269"
+           id="text3553"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3551"
+             x="1358.1487"
+             y="1190.9269"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.90804">D : Digital input</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="1358.2183"
+           y="1216.4594"
+           id="text3557"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3555"
+             x="1358.2183"
+             y="1216.4594"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">T : Timer</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="1358.1487"
+           y="1241.8315"
+           id="text3561"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3559"
+             x="1358.1487"
+             y="1241.8315"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#ffffff;fill-opacity:1;stroke-width:1.90804">M : Bit marker</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.730884"
+           id="rect3569"
+           width="166.63405"
+           height="148.76811"
+           x="955.36755"
+           y="1644.2096" />
+      </g>
+      <g
+         id="g4281"
+         transform="matrix(0.26458333,0,0,0.26458333,-161.83339,-338.24383)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="1632.0917"
+           y="1190.9269"
+           id="text3583"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3580"
+             x="1632.0917"
+             y="1190.9269"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.90804">Enter byte nr:</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="1632.1613"
+           y="1216.4594"
+           id="text3587"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3585"
+             x="1632.1613"
+             y="1216.4594"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">+00</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="1632.0917"
+           y="1241.8315"
+           id="text3591"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3589"
+             x="1632.0917"
+             y="1241.8315"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.90804">      ^</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.750076"
+           id="rect3593"
+           width="175.50002"
+           height="148.76811"
+           x="1149.0016"
+           y="1644.2096" />
+      </g>
+      <g
+         id="g4313"
+         transform="matrix(0.26458333,0,0,0.26458333,-159.45214,-338.24383)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="1924.9442"
+           y="1190.9269"
+           id="text3597"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3595"
+             x="1924.9442"
+             y="1190.9269"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.90804">Enter bit pos:</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="1925.0138"
+           y="1216.4594"
+           id="text3601"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3599"
+             x="1925.0138"
+             y="1216.4594"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">+03</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="1924.9442"
+           y="1241.8315"
+           id="text3605"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3603"
+             x="1924.9442"
+             y="1241.8315"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.90804">      ^</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.750076"
+           id="rect3607"
+           width="175.50002"
+           height="148.76811"
+           x="1356.0016"
+           y="1644.2096" />
+      </g>
+      <g
+         id="g4159"
+         transform="matrix(0.26458333,0,0,0.26458333,-151.94656,-336.60088)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766">
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.17771"
+           id="rect3617"
+           width="60.001621"
+           height="35.55389"
+           x="466.63245"
+           y="1838.7904" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="662.47046"
+           y="1326.4921"
+           id="text3621"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3619"
+             x="662.47046"
+             y="1326.4921"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#ffffff;fill-opacity:1;stroke-width:1.90804">Logic</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="662.54004"
+           y="1352.0245"
+           id="text3625"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3623"
+             x="662.54004"
+             y="1352.0245"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">Move</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="662.47046"
+           y="1377.3967"
+           id="text3629"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3627"
+             x="662.47046"
+             y="1377.3967"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">Timers</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="662.47046"
+           y="1402.8301"
+           id="text3633"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3631"
+             x="662.47046"
+             y="1402.8301"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">Counters</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.690281"
+           id="rect3635"
+           width="148.63405"
+           height="148.76811"
+           x="463.63403"
+           y="1836" />
+      </g>
+      <g
+         id="g4207"
+         transform="matrix(0.26458333,0,0,0.26458333,-144.76735,-336.60088)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766">
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.45436"
+           id="rect3637"
+           width="91.501549"
+           height="35.55389"
+           x="655.49841"
+           y="1838.7904" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="929.66791"
+           y="1326.4921"
+           id="text3641"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3639"
+             x="929.66791"
+             y="1326.4921"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#ffffff;fill-opacity:1;stroke-width:1.90804">A      :And</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="929.73749"
+           y="1352.0245"
+           id="text3645"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3643"
+             x="929.73749"
+             y="1352.0245"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">O      :Or</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="929.66791"
+           y="1377.3967"
+           id="text3649"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3647"
+             x="929.66791"
+             y="1377.3967"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">AN   :Not And</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="929.66791"
+           y="1402.8301"
+           id="text3653"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3651"
+             x="929.66791"
+             y="1402.8301"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">ON   :Not Or</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.690281"
+           id="rect3655"
+           width="148.63405"
+           height="148.76811"
+           x="652.5"
+           y="1836" />
+      </g>
+      <g
+         id="g4257"
+         transform="matrix(0.26458333,0,0,0.26458333,-132.82563,-336.60088)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766">
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.91797"
+           id="rect3657"
+           width="159.13567"
+           height="35.55389"
+           x="826.60803"
+           y="1911.108" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="1171.3999"
+           y="1326.4921"
+           id="text3661"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3659"
+             x="1171.3999"
+             y="1326.4921"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.90804">D : Digital input</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="1171.4695"
+           y="1352.0245"
+           id="text3665"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3663"
+             x="1171.4695"
+             y="1352.0245"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">T : Timer</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="1171.3999"
+           y="1377.3967"
+           id="text3669"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3667"
+             x="1171.3999"
+             y="1377.3967"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#ffffff;fill-opacity:1;stroke-width:1.90804">M : Bit marker</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.730884"
+           id="rect3671"
+           width="166.63405"
+           height="148.76811"
+           x="823.36597"
+           y="1836" />
+      </g>
+      <g
+         id="g4290"
+         transform="matrix(0.26458333,0,0,0.26458333,-126.90797,-336.60088)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="1445.3429"
+           y="1326.4921"
+           id="text3675"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3673"
+             x="1445.3429"
+             y="1326.4921"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.90804">Enter byte nr:</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="1445.4125"
+           y="1352.0245"
+           id="text3679"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3677"
+             x="1445.4125"
+             y="1352.0245"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">+02</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="1445.3429"
+           y="1377.3967"
+           id="text3683"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3681"
+             x="1445.3429"
+             y="1377.3967"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.90804">      ^</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.750076"
+           id="rect3685"
+           width="175.50002"
+           height="148.76811"
+           x="1017"
+           y="1836" />
+      </g>
+      <g
+         id="g4322"
+         transform="matrix(0.26458333,0,0,0.26458333,-124.52672,-336.60088)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="1738.1954"
+           y="1326.4921"
+           id="text3689"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3687"
+             x="1738.1954"
+             y="1326.4921"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.90804">Enter bit pos:</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="1738.265"
+           y="1352.0245"
+           id="text3693"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3691"
+             x="1738.265"
+             y="1352.0245"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">+00</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="1738.1954"
+           y="1377.3967"
+           id="text3697"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3695"
+             x="1738.1954"
+             y="1377.3967"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.90804">      ^</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.750076"
+           id="rect3699"
+           width="175.50002"
+           height="148.76811"
+           x="1224"
+           y="1836" />
+      </g>
+      <g
+         id="g4103"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766"
+         transform="matrix(0.26458333,0,0,0.26458333,-155.48297,-338.98213)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="375.79471"
+           y="1332.8536"
+           id="text3705"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3703"
+             x="375.79471"
+             y="1332.8536"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.90804">1: A      M0.3</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.875193"
+           id="rect3721"
+           width="33.135639"
+           height="35.55389"
+           x="263.47064"
+           y="1883.7808" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="375.86429"
+           y="1358.3861"
+           id="text3709"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3707"
+             x="375.86429"
+             y="1358.3861"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#ffffff;fill-opacity:1;stroke-width:1.90804">[+]</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.690281"
+           id="rect3719"
+           width="148.63405"
+           height="148.76811"
+           x="261"
+           y="1845" />
+      </g>
+      <g
+         id="g4171"
+         transform="matrix(0.26458333,0,0,0.26458333,-151.94656,-331.83838)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766">
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.17771"
+           id="rect3723"
+           width="60.001621"
+           height="35.55389"
+           x="466.63245"
+           y="2018.7904" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="662.47052"
+           y="1453.7234"
+           id="text3727"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3725"
+             x="662.47052"
+             y="1453.7234"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#ffffff;fill-opacity:1;stroke-width:1.90804">Logic</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="662.5401"
+           y="1479.2559"
+           id="text3731"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3729"
+             x="662.5401"
+             y="1479.2559"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">Move</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="662.47052"
+           y="1504.6281"
+           id="text3735"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3733"
+             x="662.47052"
+             y="1504.6281"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">Timers</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="662.47052"
+           y="1530.0614"
+           id="text3739"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3737"
+             x="662.47052"
+             y="1530.0614"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">Counters</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.690281"
+           id="rect3741"
+           width="148.63405"
+           height="148.76811"
+           x="463.63403"
+           y="2016" />
+      </g>
+      <g
+         id="g4219"
+         transform="matrix(0.26458333,0,0,0.26458333,-144.76736,-331.83838)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766">
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.68622"
+           id="rect3743"
+           width="123.00156"
+           height="35.55389"
+           x="655.49847"
+           y="2126.9976" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="929.66797"
+           y="1453.7234"
+           id="text3747"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3745"
+             x="929.66797"
+             y="1453.7234"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.90804">O      :Or</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="929.73755"
+           y="1479.2559"
+           id="text3751"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3749"
+             x="929.73755"
+             y="1479.2559"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">AN   :Not And</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="929.66797"
+           y="1504.6281"
+           id="text3755"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3753"
+             x="929.66797"
+             y="1504.6281"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">ON   :Not Or</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="932.49744"
+           y="1530.0614"
+           id="text3759"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3757"
+             x="932.49744"
+             y="1530.0614"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"> =     :Assign </tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.690281"
+           id="rect3761"
+           width="148.63405"
+           height="148.76811"
+           x="652.50006"
+           y="2016" />
+      </g>
+      <g
+         id="g4265"
+         transform="matrix(0.26458333,0,0,0.26458333,-132.82565,-331.83838)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766">
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.91797"
+           id="rect3763"
+           width="159.13567"
+           height="35.55389"
+           x="826.36432"
+           y="2054.6904" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="1171.3999"
+           y="1453.7234"
+           id="text3767"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3765"
+             x="1171.3999"
+             y="1453.7234"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.90804">M : Bit marker</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="1171.4695"
+           y="1479.2559"
+           id="text3771"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3769"
+             x="1171.4695"
+             y="1479.2559"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#ffffff;fill-opacity:1;stroke-width:1.90804">D : Digital out</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.730884"
+           id="rect3777"
+           width="166.63405"
+           height="148.76811"
+           x="823.36603"
+           y="2016" />
+      </g>
+      <g
+         id="g4299"
+         transform="matrix(0.26458333,0,0,0.26458333,-126.90797,-331.83838)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="1445.3429"
+           y="1453.7234"
+           id="text3781"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3779"
+             x="1445.3429"
+             y="1453.7234"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.90804">Enter out nr:</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="1445.4125"
+           y="1479.2559"
+           id="text3785"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3783"
+             x="1445.4125"
+             y="1479.2559"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">+13</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="1445.3429"
+           y="1504.6281"
+           id="text3789"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3787"
+             x="1445.3429"
+             y="1504.6281"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.90804">      ^</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.750076"
+           id="rect3791"
+           width="175.50002"
+           height="148.76811"
+           x="1017"
+           y="2016" />
+      </g>
+      <g
+         id="g4113"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766"
+         transform="matrix(0.26458333,0,0,0.26458333,-155.48297,-338.98213)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="375.79471"
+           y="1472.808"
+           id="text3823"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3821"
+             x="375.79471"
+             y="1472.808"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.90804">1: A      M0.3</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="375.86429"
+           y="1498.3405"
+           id="text3827"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3825"
+             x="375.86429"
+             y="1498.3405"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">2: A      M2.0</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.875193"
+           id="rect3839"
+           width="33.135639"
+           height="35.55389"
+           x="264.32214"
+           y="2117.4055" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="375.79471"
+           y="1523.7126"
+           id="text3831"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3829"
+             x="375.79471"
+             y="1523.7126"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#ffffff;fill-opacity:1;stroke-width:1.90804">[+]</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.690281"
+           id="rect3837"
+           width="148.63405"
+           height="148.76811"
+           x="261"
+           y="2043" />
+      </g>
+      <g
+         id="g4147"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766"
+         transform="matrix(0.26458333,0,0,0.26458333,-155.48297,-338.98213)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.90804"
+           x="375.79471"
+           y="1612.7623"
+           id="text3879"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3877"
+             x="375.79471"
+             y="1612.7623"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.90804">1: A      M0.3</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="375.86429"
+           y="1638.2948"
+           id="text3883"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3881"
+             x="375.86429"
+             y="1638.2948"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">2: A      M2.0</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="375.79471"
+           y="1663.667"
+           id="text3887"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3885"
+             x="375.79471"
+             y="1663.667"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.90804">3: =       D13</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.875193"
+           id="rect3907"
+           width="33.135639"
+           height="35.55389"
+           x="263.86435"
+           y="2351.9973" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:76.3218px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.90804"
+           x="375.79471"
+           y="1689.1003"
+           id="text3891"
+           transform="scale(0.70684037,1.4147466)"><tspan
+             sodipodi:role="line"
+             id="tspan3889"
+             x="375.79471"
+             y="1689.1003"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.4405px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#ffffff;fill-opacity:1;stroke-width:1.90804">[+]</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.690281"
+           id="rect3893"
+           width="148.63405"
+           height="148.76811"
+           x="261"
+           y="2241" />
+      </g>
+      <rect
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.280146"
+         id="rect3969"
+         width="12.459929"
+         height="9.6877651"
+         x="28.657536"
+         y="254.75598"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299"
+         inkscape:export-ydpi="299" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5875px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:0.514686"
+         x="41.59927"
+         y="185.44994"
+         id="text3973"
+         transform="scale(0.69974359,1.4290949)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299"
+         inkscape:export-ydpi="299"><tspan
+           sodipodi:role="line"
+           id="tspan3971"
+           x="41.59927"
+           y="185.44994"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.86247px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#ffffff;fill-opacity:1;stroke-width:0.514686">Run</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5875px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#000000;fill-opacity:1;stroke-width:0.514686"
+         x="41.618061"
+         y="192.3372"
+         id="text3977"
+         transform="scale(0.69974359,1.4290949)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299"
+         inkscape:export-ydpi="299"><tspan
+           sodipodi:role="line"
+           id="tspan3975"
+           x="41.618061"
+           y="192.3372"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.86247px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:0.514686">Edit</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5875px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:0.514686"
+         x="41.59927"
+         y="199.18124"
+         id="text3981"
+         transform="scale(0.69974359,1.4290949)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299"
+         inkscape:export-ydpi="299"><tspan
+           sodipodi:role="line"
+           id="tspan3979"
+           x="41.59927"
+           y="199.18124"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.86247px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:0.514686">Program</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5875px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:0.514686"
+         x="41.59927"
+         y="206.04176"
+         id="text3985"
+         transform="scale(0.69974359,1.4290949)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299"
+         inkscape:export-ydpi="299"><tspan
+           sodipodi:role="line"
+           id="tspan3983"
+           x="41.59927"
+           y="206.04176"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.86247px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:0.514686">Clear</tspan></text>
+      <rect
+         style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.1862"
+         id="rect3987"
+         width="39.690815"
+         height="40.53651"
+         x="27.87328"
+         y="253.94913"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299"
+         inkscape:export-ydpi="299" />
+      <g
+         id="g4229"
+         transform="matrix(0.26458333,0,0,0.26458333,-87.58545,-327.07589)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766">
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.65167"
+           id="rect3989"
+           width="114.59264"
+           height="36.615177"
+           x="655.6496"
+           y="2198.9253" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:77.8109px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.94527"
+           x="939.15796"
+           y="1565.9308"
+           id="text3993"
+           transform="scale(0.6997436,1.4290949)"><tspan
+             sodipodi:role="line"
+             id="tspan3991"
+             x="939.15796"
+             y="1565.9308"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.9369px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#ffffff;fill-opacity:1;stroke-width:1.94527">Save&amp;Run</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:77.8109px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.94527"
+           x="939.22894"
+           y="1591.9614"
+           id="text3997"
+           transform="scale(0.6997436,1.4290949)"><tspan
+             sodipodi:role="line"
+             id="tspan3995"
+             x="939.22894"
+             y="1591.9614"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.9369px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.94527">Discard</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:77.8109px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:1.94527"
+           x="939.15796"
+           y="1617.8286"
+           id="text4001"
+           transform="scale(0.6997436,1.4290949)"><tspan
+             sodipodi:role="line"
+             id="tspan3999"
+             x="939.15796"
+             y="1617.8286"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.9369px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:1.94527">Cancel</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.703749"
+           id="rect4007"
+           width="150.01253"
+           height="153.20886"
+           x="652.5"
+           y="2196" />
+      </g>
+      <g
+         id="g4304"
+         transform="matrix(0.26458333,0,0,0.26458333,-69.72607,-327.07588)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:77.8109px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.94527"
+           x="1460.063"
+           y="1565.9308"
+           id="text4013"
+           transform="scale(0.6997436,1.4290949)"><tspan
+             sodipodi:role="line"
+             id="tspan4011"
+             x="1460.063"
+             y="1565.9308"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.9369px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.94527">Running...</tspan></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.761189"
+           id="rect4023"
+           width="175.49994"
+           height="153.20886"
+           x="1017"
+           y="2196" />
+      </g>
+      <g
+         id="g4272"
+         transform="matrix(0.26458333,0,0,0.26458333,-75.6792,-327.07589)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:77.8109px;line-height:0.2;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:1.94527"
+           x="1183.5332"
+           y="1565.9308"
+           id="text4027"
+           transform="scale(0.6997436,1.4290949)"><tspan
+             id="tspan4025"
+             x="1183.5332"
+             y="1565.9308"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.9369px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.94527"
+             sodipodi:role="line">Programming</tspan><tspan
+             x="1183.5332"
+             y="1591.3004"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.9369px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.94527"
+             sodipodi:role="line"
+             id="tspan4033">eeprom...</tspan><tspan
+             x="1183.5332"
+             y="1616.67"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.9369px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:1.94527"
+             id="tspan4031"
+             sodipodi:role="line" /></text>
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.741415"
+           id="rect4029"
+           width="166.50002"
+           height="153.20886"
+           x="823.5"
+           y="2196" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.5875px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';fill:#ffffff;fill-opacity:1;stroke-width:0.514686"
+         x="-121.7463"
+         y="38.81868"
+         id="text4037"
+         transform="scale(0.69974359,1.4290949)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766"><tspan
+           sodipodi:role="line"
+           id="tspan4035"
+           x="-121.7463"
+           y="38.81868"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.86247px;font-family:'07x5';-inkscape-font-specification:'07x5';fill:#000000;fill-opacity:1;stroke-width:0.514686">No program</tspan></text>
+      <rect
+         style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.1862"
+         id="rect4039"
+         width="39.690815"
+         height="40.53651"
+         x="-86.426712"
+         y="44.39912"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5748-5)"
+         d="M -45.94547,63.449118 H 27.873278"
+         id="path4324"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker4888)"
+         d="m -45.94547,115.83661 c 15.47812,0 15.47812,0 15.47812,0"
+         id="path4884"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6398)"
+         d="m 11.204528,115.83661 c 15.478125,0 15.478125,0 15.478125,0"
+         id="path4978"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6408)"
+         d="m 68.354527,115.83661 c 15.478125,0 15.478125,0 15.478125,0"
+         id="path5080"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6418)"
+         d="m 130.26703,115.83661 h 10.71562"
+         id="path5352"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker5494)"
+         d="m 189.79828,115.83661 h 8.33437"
+         id="path5372"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7076)"
+         d="m -45.94547,169.41474 c 15.47812,0 15.47812,0 15.47812,0"
+         id="path6868"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7066)"
+         d="m 11.204528,169.41474 c 15.478125,0 15.478125,0 15.478125,0"
+         id="path6870"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7056)"
+         d="m 68.354527,169.41474 c 15.478125,0 15.478125,0 15.478125,0"
+         id="path6872"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7046)"
+         d="m 130.26703,169.41474 h 10.71562"
+         id="path6874"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6996)"
+         d="m 189.79828,169.41474 h 8.33437"
+         id="path6884"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7616)"
+         d="m -45.94547,220.61161 c 15.47812,0 15.47812,0 15.47812,0"
+         id="path7516"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7606)"
+         d="m 11.204528,220.61161 c 15.478125,0 15.478125,0 15.478125,0"
+         id="path7518"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7596)"
+         d="m 68.354527,220.61161 c 15.478125,0 15.478125,0 15.478125,0"
+         id="path7520"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7586)"
+         d="m 130.26703,220.61161 h 10.71562"
+         id="path7522"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.4572;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker8120)"
+         d="m -45.94547,272.99911 c 71.437498,0 71.437498,0 71.437498,0"
+         id="path8020"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker8110-7)"
+         d="m 68.386428,272.99911 c 15.478125,0 15.478125,0 15.478125,0"
+         id="path8022"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker8100-5)"
+         d="m 125.53644,272.99911 c 15.47812,0 15.47812,0 15.47812,0"
+         id="path8024"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker8090-6)"
+         d="m 187.44893,272.99911 h 10.71563"
+         id="path8026"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker8070-3)"
+         d="m 68.386428,272.99911 c 15.478125,0 15.478125,0 15.478125,0"
+         id="path8030"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker8060-1)"
+         d="m 125.53644,272.99911 c 15.47812,0 15.47812,0 15.47812,0"
+         id="path8032"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker8050-8)"
+         d="m 187.44893,272.99911 h 10.71563"
+         id="path8034"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508868;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker8882)"
+         d="m 245.7027,118.21786 c 21.50451,0 21.50451,23.8125 0.014,23.88492 -52.74916,0.17775 -249.6015396,0.62061 -333.31751,1.01645 -21.52107,0.10176 -21.52107,27.48613 -0.0166,27.48613"
+         id="path8872"
+         sodipodi:nodetypes="cssc"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508868;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker9200)"
+         d="m 245.7027,170.60536 c 21.50451,0 21.50451,23.8125 0.014,23.88492 -52.74916,0.17775 -249.6015396,0.62061 -333.31751,1.01645 -21.52107,0.10176 -21.52107,27.48613 -0.0166,27.48613"
+         id="path9196"
+         sodipodi:nodetypes="cssc"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.4572;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker9598-7)"
+         d="m 188.67443,222.99286 c 17.82527,0 17.82527,23.8125 0.0116,23.88492 -43.72422,0.17775 -206.89681,0.62061 -276.28967,1.01645 -17.83902,0.10176 -17.83902,27.48613 -0.0137,27.48613"
+         id="path9594"
+         sodipodi:nodetypes="cssc"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.508868;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker11144-6)"
+         d="m 67.163902,63.449118 c 21.504513,0 21.062572,26.906086 -0.427918,26.978506 -52.749159,0.17775 -70.6208036,-0.0917 -154.336774,0.30411 -21.52107,0.10176 -21.52107,27.486126 -0.0166,27.486126"
+         id="path11140"
+         sodipodi:nodetypes="cssc"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299.97766"
+         inkscape:export-ydpi="299.97766" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.1935px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:0.504836"
+         x="-39.141327"
+         y="191.87961"
+         id="text9357"
+         transform="scale(0.70684037,1.4147466)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299"
+         inkscape:export-ydpi="299"><tspan
+           sodipodi:role="line"
+           id="tspan9355"
+           x="-39.141327"
+           y="191.87961"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.73113px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:0.504836">Przycisk LEWO</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.1935px;line-height:1.25;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:0.504836"
+         x="-40.99411"
+         y="42.975327"
+         id="text9399"
+         transform="scale(0.70684037,1.4147466)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299"
+         inkscape:export-ydpi="299"><tspan
+           sodipodi:role="line"
+           id="tspan9397"
+           x="-40.99411"
+           y="42.975327"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.73113px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:0.504836">Czekaj  3sek</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.1935px;line-height:0.16;font-family:'MS Mincho';-inkscape-font-specification:'MS Mincho';stroke-width:0.504836"
+         x="-39.141327"
+         y="201.86385"
+         id="text9403"
+         transform="scale(0.70684037,1.4147466)"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299"
+         inkscape:export-ydpi="299"><tspan
+           sodipodi:role="line"
+           id="tspan9401"
+           x="-39.141327"
+           y="201.86385"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.73113px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:0.504836">Powrot do menu </tspan><tspan
+           sodipodi:role="line"
+           x="-39.141327"
+           y="207.90929"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.73113px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:0.504836"
+           id="tspan9412">glownego</tspan><tspan
+           sodipodi:role="line"
+           x="-39.141327"
+           y="213.95474"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.73113px;font-family:'07x5';-inkscape-font-specification:'07x5';stroke-width:0.504836"
+           id="tspan9410" /></text>
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.4572;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect9408"
+         width="0.1984375"
+         height="0.89296871"
+         x="-11.781146"
+         y="276.63715"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299"
+         inkscape:export-ydpi="299" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.4572;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect9414"
+         width="0.1984375"
+         height="0.89296871"
+         x="-21.372303"
+         y="285.16995"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299"
+         inkscape:export-ydpi="299" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.6096;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m -24.44808,288.60953 c 1.25677,-1.85209 1.25677,-1.85209 1.25677,-1.85209"
+         id="path9416"
+         inkscape:export-filename="C:\Users\OSSA\Desktop\g4077.png"
+         inkscape:export-xdpi="299"
+         inkscape:export-ydpi="299" />
+    </g>
+  </g>
+</svg>

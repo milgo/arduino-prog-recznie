@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="43.982368mm"
+   height="43.982368mm"
+   viewBox="0 0 43.982368 43.982368"
+   version="1.1"
+   id="svg23719"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="przyciski.svg">
+  <defs
+     id="defs23713">
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mstart"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mstart"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(0.4,0,0,0.4,4,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path3425" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="-133.85084"
+     inkscape:cy="149.41847"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1465"
+     inkscape:window-height="1040"
+     inkscape:window-x="175"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata23716">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-74.912462,-76.991327)">
+    <g
+       id="g24566"
+       transform="translate(-231.93564,-19.702019)">
+      <g
+         id="g3295"
+         transform="matrix(0.26458333,0,0,0.26458333,138.82183,-170.75357)"
+         inkscape:export-xdpi="611"
+         inkscape:export-ydpi="611">
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.937501;stroke-opacity:1"
+           id="rect2430"
+           width="17.999987"
+           height="18.000044"
+           x="711"
+           y="1062" />
+        <ellipse
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-width:0.865348;stroke-opacity:1"
+           id="path3261"
+           cx="720.12793"
+           cy="1071.063"
+           rx="4.224"
+           ry="4.178349" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="path3261-3"
+           cx="713.94476"
+           cy="1065.1573"
+           r="0.95999998" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3283"
+           cx="726.05109"
+           cy="1064.9604"
+           r="0.95999998" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3285"
+           cx="714.04321"
+           cy="1076.9912"
+           r="0.95999998" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3287"
+           cx="725.90955"
+           cy="1076.9912"
+           r="0.95999998" />
+      </g>
+      <g
+         id="g3310"
+         transform="matrix(0.26458333,0,0,0.26458333,138.82183,-164.80045)"
+         inkscape:export-xdpi="611"
+         inkscape:export-ydpi="611">
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.937501;stroke-opacity:1"
+           id="rect3298"
+           width="17.999987"
+           height="18.000044"
+           x="711"
+           y="1062" />
+        <ellipse
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-width:0.865348;stroke-opacity:1"
+           id="ellipse3300"
+           cx="720.12793"
+           cy="1071.063"
+           rx="4.224"
+           ry="4.178349" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3302"
+           cx="713.94476"
+           cy="1065.1573"
+           r="0.95999998" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3304"
+           cx="726.05109"
+           cy="1064.9604"
+           r="0.95999998" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3306"
+           cx="714.04321"
+           cy="1076.9912"
+           r="0.95999998" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3308"
+           cx="725.90955"
+           cy="1076.9912"
+           r="0.95999998" />
+      </g>
+      <g
+         id="g3324"
+         transform="matrix(0.26458333,0,0,0.26458333,138.82183,-158.84732)"
+         inkscape:export-xdpi="611"
+         inkscape:export-ydpi="611">
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.937501;stroke-opacity:1"
+           id="rect3312"
+           width="17.999987"
+           height="18.000044"
+           x="711"
+           y="1062" />
+        <ellipse
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-width:0.865348;stroke-opacity:1"
+           id="ellipse3314"
+           cx="720.12793"
+           cy="1071.063"
+           rx="4.224"
+           ry="4.178349" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3316"
+           cx="713.94476"
+           cy="1065.1573"
+           r="0.95999998" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3318"
+           cx="726.05109"
+           cy="1064.9604"
+           r="0.95999998" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3320"
+           cx="714.04321"
+           cy="1076.9912"
+           r="0.95999998" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3322"
+           cx="725.90955"
+           cy="1076.9912"
+           r="0.95999998" />
+      </g>
+      <g
+         id="g3339"
+         transform="matrix(0.26458333,0,0,0.26458333,132.86871,-164.80045)"
+         inkscape:export-xdpi="611"
+         inkscape:export-ydpi="611">
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.937501;stroke-opacity:1"
+           id="rect3326"
+           width="17.999987"
+           height="18.000044"
+           x="711"
+           y="1062" />
+        <ellipse
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-width:0.865348;stroke-opacity:1"
+           id="ellipse3328"
+           cx="720.12793"
+           cy="1071.063"
+           rx="4.224"
+           ry="4.178349" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3330"
+           cx="713.94476"
+           cy="1065.1573"
+           r="0.95999998" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3333"
+           cx="726.05109"
+           cy="1064.9604"
+           r="0.95999998" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3335"
+           cx="714.04321"
+           cy="1076.9912"
+           r="0.95999998" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3337"
+           cx="725.90955"
+           cy="1076.9912"
+           r="0.95999998" />
+      </g>
+      <g
+         id="g3353"
+         transform="matrix(0.26458333,0,0,0.26458333,144.77496,-164.80045)"
+         inkscape:export-xdpi="611"
+         inkscape:export-ydpi="611">
+        <rect
+           style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.937501;stroke-opacity:1"
+           id="rect3341"
+           width="17.999987"
+           height="18.000044"
+           x="711"
+           y="1062" />
+        <ellipse
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-width:0.865348;stroke-opacity:1"
+           id="ellipse3343"
+           cx="720.12793"
+           cy="1071.063"
+           rx="4.224"
+           ry="4.178349" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3345"
+           cx="713.94476"
+           cy="1065.1573"
+           r="0.95999998" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3347"
+           cx="726.05109"
+           cy="1064.9604"
+           r="0.95999998" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3349"
+           cx="714.04321"
+           cy="1076.9912"
+           r="0.95999998" />
+        <circle
+           style="fill:#000000;fill-opacity:0.991968;stroke:#000000;stroke-opacity:1"
+           id="circle3351"
+           cx="725.90955"
+           cy="1076.9912"
+           r="0.95999998" />
+      </g>
+      <text
+         id="text3380"
+         y="128.21968"
+         x="329.55133"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.0714375;stroke-miterlimit:2.4142;stroke-dasharray:none;stroke-opacity:1"
+         xml:space="preserve"
+         inkscape:export-xdpi="611.39044"
+         inkscape:export-ydpi="611.39044"><tspan
+           y="128.21968"
+           x="329.55133"
+           id="tspan3376"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.0714375" /><tspan
+           y="130.86552"
+           x="329.55133"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.0714375"
+           id="tspan3378">Przycisk </tspan><tspan
+           y="133.51135"
+           x="329.55133"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.0714375"
+           id="tspan3790">DÓŁ</tspan><tspan
+           y="136.1572"
+           x="329.55133"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.0714375"
+           id="tspan3413">S1(P0)</tspan></text>
+      <text
+         id="text3387"
+         y="104.82347"
+         x="338.80017"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.0714375;stroke-miterlimit:2.4142;stroke-dasharray:none;stroke-opacity:1"
+         xml:space="preserve"
+         inkscape:export-xdpi="611.39044"
+         inkscape:export-ydpi="611.39044"><tspan
+           y="104.82347"
+           x="338.80017"
+           id="tspan3382"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;stroke-width:0.0714375" /><tspan
+           y="107.46931"
+           x="338.80017"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;stroke-width:0.0714375"
+           id="tspan3385">Przycisk </tspan><tspan
+           y="110.11514"
+           x="338.80017"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;stroke-width:0.0714375"
+           id="tspan3786">ENTER </tspan><tspan
+           y="112.76099"
+           x="338.80017"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;stroke-width:0.0714375"
+           id="tspan3415">S2(P1)</tspan></text>
+      <text
+         id="text3393"
+         y="99.635735"
+         x="329.48059"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.0714375;stroke-miterlimit:2.4142;stroke-dasharray:none;stroke-opacity:1"
+         xml:space="preserve"
+         inkscape:export-xdpi="611.39044"
+         inkscape:export-ydpi="611.39044"><tspan
+           y="99.635735"
+           x="329.48059"
+           id="tspan3389"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.0714375" /><tspan
+           y="102.28157"
+           x="329.48059"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.0714375"
+           id="tspan3391">Przycisk </tspan><tspan
+           y="104.92741"
+           x="329.48059"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.0714375"
+           id="tspan3788">GÓRA</tspan><tspan
+           y="107.57325"
+           x="329.48059"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;text-align:center;text-anchor:middle;stroke-width:0.0714375"
+           id="tspan3411">S3(P7)</tspan></text>
+      <text
+         id="text3399"
+         y="115.18876"
+         x="319.22952"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.0714375;stroke-miterlimit:2.4142;stroke-dasharray:none;stroke-opacity:1"
+         xml:space="preserve"
+         inkscape:export-xdpi="611.39044"
+         inkscape:export-ydpi="611.39044"><tspan
+           y="115.18876"
+           x="319.22952"
+           id="tspan3395"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;text-align:end;text-anchor:end;stroke-width:0.0714375" /><tspan
+           y="117.83459"
+           x="319.22952"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;text-align:end;text-anchor:end;stroke-width:0.0714375"
+           id="tspan3397">Przycisk </tspan><tspan
+           y="120.48043"
+           x="319.22952"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;text-align:end;text-anchor:end;stroke-width:0.0714375"
+           id="tspan3782">LEWO</tspan><tspan
+           y="123.12627"
+           x="319.22952"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;text-align:end;text-anchor:end;stroke-width:0.0714375"
+           id="tspan3407">S4(P2)</tspan></text>
+      <text
+         id="text3405"
+         y="115.56138"
+         x="338.87384"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.175px;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.0714375;stroke-miterlimit:2.4142;stroke-dasharray:none;stroke-opacity:1"
+         xml:space="preserve"
+         inkscape:export-xdpi="611.39044"
+         inkscape:export-ydpi="611.39044"><tspan
+           y="115.56138"
+           x="338.87384"
+           id="tspan3401"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;stroke-width:0.0714375" /><tspan
+           y="118.20721"
+           x="338.87384"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;stroke-width:0.0714375"
+           id="tspan3403">Przycisk </tspan><tspan
+           y="120.85305"
+           x="338.87384"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;stroke-width:0.0714375"
+           id="tspan3784">PRAWO</tspan><tspan
+           y="123.49889"
+           x="338.87384"
+           sodipodi:role="line"
+           style="font-size:2.11667px;line-height:1.25;stroke-width:0.0714375"
+           id="tspan3409">S5(P3) </tspan></text>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.254;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mstart)"
+         d="m 331.70308,116.18705 c 5.95312,-4.7625 5.95312,-4.7625 5.95312,-4.7625 v 0"
+         id="path3417"
+         inkscape:export-xdpi="611"
+         inkscape:export-ydpi="611" />
+    </g>
+  </g>
+</svg>
