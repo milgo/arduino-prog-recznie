@@ -200,9 +200,13 @@ void insertProgramLine(int number, bool edit){
  
 					uint8_t memTypeOpt = pgm_read_word(&memTypeOption[mem]);
 					if(memTypeOpt == 1){
-						uint8_t mType =	showMenu(memType, memTypeDesc, 0, 3);
-						mem = mem & 0x3F; //clear 2 MSB
-						mem |= mType << 6; //move mem type to 2 MSB
+						int8_t mType =	showMenu(memType, memTypeDesc, 0, 3);
+            if(mType >= 0 ){
+						  mem = mem & 0x3F; //clear 2 MSB
+						  mem |= mType << 6; //move mem type to 2 MSB
+            }else{
+              mem = -1;
+            }
 				}else{
 					}//put mem symbol here??? % or $ or &
    

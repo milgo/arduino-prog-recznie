@@ -272,6 +272,16 @@ void runProgram(){
     printA(message, NOPROGRAM_MSG);
     displayDisplay();
     delay(3000);
+
+    // display buttons byte
+    /*while(true){
+      displayClear();
+      uint8_t newButtons = ~getButtonsNoneBlocking();
+            
+      displaySetCursor(0, 0);
+      displayPrint(newButtons);
+      displayDisplay();
+    }*/
   }
 }
 

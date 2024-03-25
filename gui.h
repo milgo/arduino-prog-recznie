@@ -19,11 +19,11 @@
 #define MAX_STRING_SIZE 10
 #define FONT_HEIGHT 8
 
-#define BUTTON_DOWN 5
-#define BUTTON_LEFT 0
-#define BUTTON_RIGHT 1
-#define BUTTON_UP 6
-#define BUTTON_ENTER 7
+#define BUTTON_DOWN 4
+#define BUTTON_LEFT 1
+#define BUTTON_RIGHT 3
+#define BUTTON_UP 0
+#define BUTTON_ENTER 2
 #define IS_PRESSED(BUTTONS, BUTTON) (((BUTTONS) & (1<<(BUTTON))) == (1<<(BUTTON)))
 
 void setupGUI();
