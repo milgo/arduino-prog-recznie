@@ -155,12 +155,12 @@ void setupMem(){
   m[1] |=  0 << 5; //Display 2 value dw30
   m[1] |=  0 << 6; //Display 3 value dw31
 
-  for(int i=0; i<12; i++){
+/*  for(int i=0; i<12; i++){
     if(i==9 || i==10)continue;//problematic outputs
     analogWrite(i, 0);
   }
 
-  activeAImask = 0x00;
+  activeAImask = 0x00;*/
 	RTC.read(tm);
 }
 
