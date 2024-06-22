@@ -115,7 +115,7 @@ void testIO(){
 }
 
 void setup() {
-  Serial.begin(9600);
+  //Serial.begin(960);
   setupGUI();
   
   pinMode(10, INPUT_PULLUP);
