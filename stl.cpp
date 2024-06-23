@@ -3,10 +3,13 @@
 #include <stdint.h>
 #include <avr/io.h>
 #include "DS1307RTC.h"
+#include "Adafruit_FRAM_I2C.h"
 
 #include "stl.h"
 #include "messages.h"
 #include "gui.h"
+
+Adafruit_EEPROM_I2C i2ceeprom;
 
 uint32_t program[MAX_PROGRAM_SIZE];
 int32_t accumulator[2];
@@ -76,7 +79,7 @@ uint8_t volatile RLO = 1;
 uint8_t volatile cancel_RLO = true;
 int8_t volatile PC = 0, PS = 0;
 
-uint8_t mem_ptr, bit_pos, mask, mem_id;
+uint8_t mem_ptr, bit_pos, mask, mem_id, mem_opt;
 int8_t addr;
 
 void writeProgramToEeprom(){
@@ -129,8 +132,9 @@ void clearProgramLocal(){
 
 void extractParams(uint32_t param){
   mem_ptr = (param >> MEM_BIT_POS) & 0xFF;
-  mem_id = param >> 4 & 0xFF;
-  bit_pos = param & 0x7;
+  mem_id = (param >> 4) & 0x3F; //adding mem type option
+  mem_opt = (param >> 10) & 0x03; //adding mem type option 
+	bit_pos = param & 0x7;
 }
 
 void setupMem(){
@@ -162,6 +166,7 @@ void setupMem(){
 
   activeAImask = 0x00;*/
 	RTC.read(tm);
+	i2ceeprom.begin(0x50);
 }
 
 void onLoopEnd(){
@@ -247,17 +252,28 @@ void setMem(uint8_t ptr, uint8_t id, uint8_t val){
 
 uint8_t getMemBit(uint8_t ptr, uint8_t id, uint8_t b){
   if(ptr == 1){
-    return ~digitalRead(pgm_read_byte(&diPins[id])) & 0x1;
+    return ~digitalRead(pgm_read_byte(&diPins[id])) & 0x1; //phisical input
   }
-  return (*getMemPtr(ptr, id)>>b) & 0x1;
+	if(mem_opt == 1){ //persistant mem
+		uint8_t epb = i2ceeprom.read(id);
+		return (epb >> b) & 0x1;		
+	}
+  return (*memMap[ptr][id]>>b) & 0x1; //volatile mem
 }
 
 void setMemBit(uint8_t ptr, uint8_t id, uint8_t b, uint8_t v){
   if(ptr == 4){
-    digitalWrite(pgm_read_byte(&doPins[id]),v);
+    digitalWrite(pgm_read_byte(&doPins[id]),v); //phisical output
   }else{
-    mask = 1 << b;
-    *memMap[ptr][id] = ((*memMap[ptr][id] & ~mask) | v << b);
+    if(mem_opt == 0){ //volatile mem
+			mask = 1 << b;
+    	*memMap[ptr][id] = ((*memMap[ptr][id] & ~mask) | v << b);
+		}else if(mem_opt == 1){ //persistant mem
+			uint8_t epb = i2ceeprom.read(id);
+		  mask = 1 << b;
+		  epb = ((epb & mask) | v << b);
+			i2ceeprom.write(id, epb);
+		}
   }
 }
 
@@ -358,12 +374,12 @@ void _l(uint32_t param){
   }
   else if(mem_ptr == AI){ //const //dodaj AI
     activeAImask = 1 << mem_id;
-    temp = *getMemPtr(mem_ptr,mem_id);
+    temp = *memMap[mem_ptr][mem_id];
     //Serial.print("activeAImask: ");Serial.println(activeAImask);
   }
   else{
     for(uint8_t i=0; i<bytes; i++){
-      uint32_t t = *getMemPtr(mem_ptr,mem_id*bytes+i);
+      uint32_t t = *memMap[mem_ptr][mem_id*bytes+i];
       temp += t<<(i*8); 
    }
   }

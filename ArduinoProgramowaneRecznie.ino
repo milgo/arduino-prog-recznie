@@ -8,8 +8,6 @@
 #include "TimeLib.h"
 #include "DS1307RTC.h"
 
-Adafruit_EEPROM_I2C i2ceeprom;
-
 #define SCREEN_SAVER_TIME 60
 #define EXIT_RUNNING_TIME 6
 #define EXIT_RUNNNING_BUTTONS(BUTTONS) IS_PRESSED(BUTTONS, BUTTON_LEFT) && IS_PRESSED(BUTTONS, BUTTON_RIGHT)
@@ -58,6 +56,9 @@ int checkRTC(){
 }
 
 int checkFRAM(){
+
+	Adafruit_EEPROM_I2C i2ceeprom;
+
   if (i2ceeprom.begin(0x50)) {  // you can stick the new i2c addr in here, e.g. begin(0x51);
     uint8_t existingVal = i2ceeprom.read(0x0);
     i2ceeprom.write(0x0, 0xaa);
