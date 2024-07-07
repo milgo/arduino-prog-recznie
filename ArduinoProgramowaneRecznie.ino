@@ -63,12 +63,12 @@ int checkFRAM(){
     uint8_t existingVal = i2ceeprom.read(0x0);
     i2ceeprom.write(0x0, 0xaa);
     uint8_t test = i2ceeprom.read(0x0);
+    i2ceeprom.write(0x0, existingVal);
     if(test == 0xaa){
       return 1;
     }else{
       return 0;
     }
-    i2ceeprom.write(0x0, existingVal);
   } else {
     return 0;
   }

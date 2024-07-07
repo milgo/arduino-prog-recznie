@@ -131,9 +131,9 @@ void clearProgramLocal(){
 }
 
 void extractParams(uint32_t param){
-  mem_ptr = (param >> MEM_BIT_POS) & 0xFF;
+	mem_ptr = (param >> MEM_BIT_POS) & 0xFF;
   mem_id = (param >> 4) & 0x3F; //adding mem type option
-  mem_opt = (param >> 10) & 0x03; //adding mem type option 
+  mem_opt = (param >> 22) & 0x03; //adding mem type option
 	bit_pos = param & 0x7;
 }
 
