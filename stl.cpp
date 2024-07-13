@@ -3,13 +3,13 @@
 #include <stdint.h>
 #include <avr/io.h>
 #include "DS1307RTC.h"
-#include "Adafruit_FRAM_I2C.h"
+#include "FRAM.h"
 
 #include "stl.h"
 #include "messages.h"
 #include "gui.h"
 
-Adafruit_EEPROM_I2C i2ceeprom;
+FRAM fram(0b00);
 
 uint32_t program[MAX_PROGRAM_SIZE];
 int32_t accumulator[2];
@@ -108,7 +108,6 @@ int readProgramFromEeprom(){
     PS = EEPROM.read(0x3FF);
     if(PS == 0xFF)
       PS = 0;
-    //Serial.println(PS);
     for(uint8_t i=0; i<PS; i++){
       program[i] = ((uint32_t)EEPROM.read(addr) << 24UL) +
                     ((uint32_t)EEPROM.read(addr+1) << 16UL)+
@@ -166,7 +165,6 @@ void setupMem(){
 
   activeAImask = 0x00;*/
 	RTC.read(tm);
-	i2ceeprom.begin(0x50);
 }
 
 void onLoopEnd(){
@@ -184,7 +182,6 @@ void timersRoutine(){//10ms
     
     fixedTimer[i]+=1;
     if(fixedTimer[i] >= pgm_read_byte_near(fixedTimerTime + i)){
-      //Serial.println(fixedTimer[i]);
       fixedTimer[i] = 0;
       m[0] ^= 1<<i;
       
@@ -193,7 +190,7 @@ void timersRoutine(){//10ms
 }
 
 void executeCommand(uint32_t instr){
-  uint8_t func_id = instr >> FUNC_BIT_POS;
+	uint8_t func_id = instr >> FUNC_BIT_POS;
   (*func_ptr[func_id])(instr);
 }
 
@@ -205,29 +202,24 @@ int32_t popFromACC(){
   int32_t res = accumulator[0];
   accumulator[0]=accumulator[1];
   accumulator[1]=0;
-  //Serial.print("after pop: ");Serial.print(accumulator[0]);Serial.print(",");Serial.println(accumulator[1]);
   return res;
 }
 
 void pushToAcc(uint32_t param){
   accumulator[1] = accumulator[0];
   accumulator[0] = (int32_t)param;
-  //Serial.print("after push: ");Serial.print(accumulator[0]);Serial.print(",");Serial.println(accumulator[1]);
 }
 
 void readAnalog(){
   for(int i=0; i<1; i++){
-    //Serial.print("activeAImask: ");Serial.print(activeAImask);Serial.print(", ");Serial.print(" 1<<i: ");Serial.println( 1<<i);
     if((activeAImask & 1<<i) == 1<<i){
       ai[i] = analogRead(i) >> 2; //10-bit to 8-bit
-      //Serial.print("reading ai: ");Serial.print(i);
     }
   }
 }
 
 void writeAnalog(){
   /*for(int i=0; i<12; i++){
-     //Serial.print("analogWrite");Serial.println(i);
      if(ao[i]>0)analogWrite(i, ao[i]);
   }*/
 }
@@ -250,39 +242,44 @@ void setMem(uint8_t ptr, uint8_t id, uint8_t val){
 //DO2 - PD6 - D6
 //DO3 - PD5 - D5
 
-uint8_t getMemBit(uint8_t ptr, uint8_t id, uint8_t b){
+uint8_t getMemBit(uint8_t ptr, uint16_t id, uint8_t b){
   if(ptr == 1){
     return ~digitalRead(pgm_read_byte(&diPins[id])) & 0x1; //phisical input
   }
 	if(mem_opt == 1){ //persistant mem
-		uint8_t epb = i2ceeprom.read(id);
+		uint8_t epb = fram.ReadByte(0,id);
 		return (epb >> b) & 0x1;		
 	}
   return (*memMap[ptr][id]>>b) & 0x1; //volatile mem
 }
 
-void setMemBit(uint8_t ptr, uint8_t id, uint8_t b, uint8_t v){
+void setMemBit(uint8_t ptr, uint16_t id, uint8_t b, uint8_t v){
+	mask = 1 << b;
   if(ptr == 4){
     digitalWrite(pgm_read_byte(&doPins[id]),v); //phisical output
   }else{
     if(mem_opt == 0){ //volatile mem
-			mask = 1 << b;
-    	*memMap[ptr][id] = ((*memMap[ptr][id] & ~mask) | v << b);
+    	*memMap[ptr][id] = ((*memMap[ptr][id] & ~mask) | v << b);	
 		}else if(mem_opt == 1){ //persistant mem
-			uint8_t epb = i2ceeprom.read(id);
-		  mask = 1 << b;
-		  epb = ((epb & mask) | v << b);
-			i2ceeprom.write(id, epb);
+			uint8_t epb = fram.ReadByte(0,id);
+		  epb = ((epb & ~mask) | v << b);
+			fram.WriteByte(0,id,epb);
 		}
   }
 }
 
-void resetMemBit(uint8_t ptr, uint8_t id, uint8_t b){
+void resetMemBit(uint8_t ptr, uint16_t id, uint8_t b){
   mask = 1 << b;
   if(ptr == 4){
     digitalWrite(doPins[id],0);
   }else{
-    *memMap[ptr][id] = (*memMap[ptr][id] & ~mask);
+		if(mem_opt == 0){					
+    	*memMap[ptr][id] = (*memMap[ptr][id] & ~mask);
+		}else if(mem_opt == 1){
+			uint8_t epb = fram.ReadByte(0,id);
+			epb = epb & ~mask;
+			fram.WriteByte(0,id,epb);
+		}
   }
 }
 
@@ -324,8 +321,9 @@ void _assign(uint32_t param){
 
 void _s(uint32_t param){
   extractParams(param);
-  if(RLO==0x1)
+  if(RLO==0x1){
     setMemBit(mem_ptr,mem_id,bit_pos,0x1);
+	}
   cancel_RLO = true;
 }
 
@@ -375,7 +373,6 @@ void _l(uint32_t param){
   else if(mem_ptr == AI){ //const //dodaj AI
     activeAImask = 1 << mem_id;
     temp = *memMap[mem_ptr][mem_id];
-    //Serial.print("activeAImask: ");Serial.println(activeAImask);
   }
   else{
     for(uint8_t i=0; i<bytes; i++){

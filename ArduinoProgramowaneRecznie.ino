@@ -4,14 +4,13 @@
 #include "gui.h"
 #include "editor.h"
 
-#include "Adafruit_FRAM_I2C.h"
+#include "FRAM.h"
 #include "TimeLib.h"
 #include "DS1307RTC.h"
 
 #define SCREEN_SAVER_TIME 60
 #define EXIT_RUNNING_TIME 6
 #define EXIT_RUNNNING_BUTTONS(BUTTONS) IS_PRESSED(BUTTONS, BUTTON_LEFT) && IS_PRESSED(BUTTONS, BUTTON_RIGHT)
-
 //Remember you first have to set RTC otherwise it will be stopped
 int checkRTC(){
 
@@ -55,21 +54,27 @@ int checkRTC(){
   return 0;
 }
 
-int checkFRAM(){
 
-	Adafruit_EEPROM_I2C i2ceeprom;
+int dumpFRAM(){
 
-  if (i2ceeprom.begin(0x50)) {  // you can stick the new i2c addr in here, e.g. begin(0x51);
-    uint8_t existingVal = i2ceeprom.read(0x0);
-    i2ceeprom.write(0x0, 0xaa);
-    uint8_t test = i2ceeprom.read(0x0);
-    i2ceeprom.write(0x0, existingVal);
-    if(test == 0xaa){
-      return 1;
-    }else{
-      return 0;
+  FRAM fram(0b00);
+    uint16_t i;
+		//fram.WriteByte(0, 10, 0xAA);
+    for(i=0;i<64;i++){
+		//	fram.WriteByte(0,i,0);
+      //Serial.print(fram.ReadByte(0,i));Serial.print(F(","));
     }
-  } else {
+}
+
+int checkFRAM(){
+  FRAM fram(0b00);
+  uint8_t existingVal = fram.ReadByte(0,0x0);
+  fram.WriteByte(0, 0x0, 0xaa);
+  uint8_t test = fram.ReadByte(0, 0x0);
+  fram.WriteByte(0, 0x0, existingVal);
+  if(test == 0xaa){
+    return 1;
+  }else{
     return 0;
   }
 }
@@ -116,7 +121,7 @@ void testIO(){
 }
 
 void setup() {
-  //Serial.begin(960);
+  //Serial.begin(9600);
   setupGUI();
   
   pinMode(10, INPUT_PULLUP);
@@ -165,8 +170,9 @@ void setup() {
     displayDisplay();
   }
 
-  delay(4000);
+  //dumpFRAM();
 
+  delay(4000);
   displayClear();
   displaySetTextNormal();
   displaySetCursor(0, 0);
